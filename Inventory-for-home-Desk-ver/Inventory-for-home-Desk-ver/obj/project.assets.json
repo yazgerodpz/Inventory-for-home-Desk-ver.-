@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Yazryr\\Documents\\Programación\\Inventory-for-home-Desk-ver.-\\Inventory-for-home-Desk-ver\\Inventory-for-home-Desk-ver\\Inventory-for-home-Desk-ver..vbproj",
+      "projectUniqueName": "D:\\Yazryr\\Documentos\\Programación\\Inventory-for-home-Desk-ver.-\\Inventory-for-home-Desk-ver\\Inventory-for-home-Desk-ver\\Inventory-for-home-Desk-ver..vbproj",
       "projectName": "Inventory-for-home-Desk-ver.",
-      "projectPath": "D:\\Yazryr\\Documents\\Programación\\Inventory-for-home-Desk-ver.-\\Inventory-for-home-Desk-ver\\Inventory-for-home-Desk-ver\\Inventory-for-home-Desk-ver..vbproj",
+      "projectPath": "D:\\Yazryr\\Documentos\\Programación\\Inventory-for-home-Desk-ver.-\\Inventory-for-home-Desk-ver\\Inventory-for-home-Desk-ver\\Inventory-for-home-Desk-ver..vbproj",
       "packagesPath": "C:\\Users\\Yazryr\\.nuget\\packages\\",
-      "outputPath": "D:\\Yazryr\\Documents\\Programación\\Inventory-for-home-Desk-ver.-\\Inventory-for-home-Desk-ver\\Inventory-for-home-Desk-ver\\obj\\",
+      "outputPath": "D:\\Yazryr\\Documentos\\Programación\\Inventory-for-home-Desk-ver.-\\Inventory-for-home-Desk-ver\\Inventory-for-home-Desk-ver\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Programas\\Microsoft Visual Studio\\Shared\\NuGetPackages"
