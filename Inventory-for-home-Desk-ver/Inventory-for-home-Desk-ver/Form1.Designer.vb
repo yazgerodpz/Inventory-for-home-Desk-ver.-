@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         MenuStrip1 = New MenuStrip()
         AñadirToolStripMenuItem = New ToolStripMenuItem()
         ArtículoToolStripMenuItem = New ToolStripMenuItem()
@@ -29,6 +30,8 @@ Partial Class Form1
         ImportanciaToolStripMenuItem = New ToolStripMenuItem()
         ActualizarToolStripMenuItem = New ToolStripMenuItem()
         ArtículoToolStripMenuItem1 = New ToolStripMenuItem()
+        ConsumoToolStripMenuItem = New ToolStripMenuItem()
+        EnSuTotalidadToolStripMenuItem = New ToolStripMenuItem()
         TipoDeEmpaqueToolStripMenuItem1 = New ToolStripMenuItem()
         ImportanciaToolStripMenuItem1 = New ToolStripMenuItem()
         EliminarToolStripMenuItem = New ToolStripMenuItem()
@@ -39,15 +42,18 @@ Partial Class Form1
         GuardarToolStripMenuItem = New ToolStripMenuItem()
         ReiniciarToolStripMenuItem = New ToolStripMenuItem()
         CopiaDeSeguridadToolStripMenuItem1 = New ToolStripMenuItem()
-        ReiniciarToolStripMenuItem1 = New ToolStripMenuItem()
         CargarCopiaDeSeguridadToolStripMenuItem = New ToolStripMenuItem()
+        ReiniciarToolStripMenuItem1 = New ToolStripMenuItem()
         TabControl1 = New TabControl()
         TabPage1 = New TabPage()
         DataGridView1 = New DataGridView()
         TabPage2 = New TabPage()
         DataGridView2 = New DataGridView()
+        Column6 = New DataGridViewTextBoxColumn()
         TabPage3 = New TabPage()
         DataGridView3 = New DataGridView()
+        Column7 = New DataGridViewTextBoxColumn()
+        Column8 = New DataGridViewTextBoxColumn()
         HScrollBar1 = New HScrollBar()
         VScrollBar1 = New VScrollBar()
         OpenFileDialog1 = New OpenFileDialog()
@@ -55,6 +61,8 @@ Partial Class Form1
         TrackBar1 = New TrackBar()
         Button1 = New Button()
         Button2 = New Button()
+        ToolTip1 = New ToolTip(components)
+        SaveFileDialog1 = New SaveFileDialog()
         Artículos = New DataGridViewTextBoxColumn()
         Column2 = New DataGridViewTextBoxColumn()
         Column3 = New DataGridViewTextBoxColumn()
@@ -62,9 +70,7 @@ Partial Class Form1
         Column4 = New DataGridViewTextBoxColumn()
         Column5 = New DataGridViewTextBoxColumn()
         Column9 = New DataGridViewTextBoxColumn()
-        Column6 = New DataGridViewTextBoxColumn()
-        Column7 = New DataGridViewTextBoxColumn()
-        Column8 = New DataGridViewTextBoxColumn()
+        ToolStripTextBox1 = New ToolStripTextBox()
         MenuStrip1.SuspendLayout()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
@@ -119,9 +125,22 @@ Partial Class Form1
         ' 
         ' ArtículoToolStripMenuItem1
         ' 
+        ArtículoToolStripMenuItem1.DropDownItems.AddRange(New ToolStripItem() {ConsumoToolStripMenuItem, EnSuTotalidadToolStripMenuItem})
         ArtículoToolStripMenuItem1.Name = "ArtículoToolStripMenuItem1"
         ArtículoToolStripMenuItem1.Size = New Size(166, 22)
         ArtículoToolStripMenuItem1.Text = "Artículo"
+        ' 
+        ' ConsumoToolStripMenuItem
+        ' 
+        ConsumoToolStripMenuItem.Name = "ConsumoToolStripMenuItem"
+        ConsumoToolStripMenuItem.Size = New Size(169, 22)
+        ConsumoToolStripMenuItem.Text = "Por consumo/uso"
+        ' 
+        ' EnSuTotalidadToolStripMenuItem
+        ' 
+        EnSuTotalidadToolStripMenuItem.Name = "EnSuTotalidadToolStripMenuItem"
+        EnSuTotalidadToolStripMenuItem.Size = New Size(169, 22)
+        EnSuTotalidadToolStripMenuItem.Text = "En su totalidad"
         ' 
         ' TipoDeEmpaqueToolStripMenuItem1
         ' 
@@ -162,6 +181,7 @@ Partial Class Form1
         ' 
         ' BuscarToolStripMenuItem
         ' 
+        BuscarToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {ToolStripTextBox1})
         BuscarToolStripMenuItem.Name = "BuscarToolStripMenuItem"
         BuscarToolStripMenuItem.Size = New Size(54, 20)
         BuscarToolStripMenuItem.Text = "Buscar"
@@ -174,7 +194,7 @@ Partial Class Form1
         ' 
         ' ReiniciarToolStripMenuItem
         ' 
-        ReiniciarToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {CopiaDeSeguridadToolStripMenuItem1, ReiniciarToolStripMenuItem1, CargarCopiaDeSeguridadToolStripMenuItem})
+        ReiniciarToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {CopiaDeSeguridadToolStripMenuItem1, CargarCopiaDeSeguridadToolStripMenuItem, ReiniciarToolStripMenuItem1})
         ReiniciarToolStripMenuItem.Name = "ReiniciarToolStripMenuItem"
         ReiniciarToolStripMenuItem.Size = New Size(71, 20)
         ReiniciarToolStripMenuItem.Text = "Avanzado"
@@ -183,19 +203,19 @@ Partial Class Form1
         ' 
         CopiaDeSeguridadToolStripMenuItem1.Name = "CopiaDeSeguridadToolStripMenuItem1"
         CopiaDeSeguridadToolStripMenuItem1.Size = New Size(212, 22)
-        CopiaDeSeguridadToolStripMenuItem1.Text = "Copia de seguridad"
-        ' 
-        ' ReiniciarToolStripMenuItem1
-        ' 
-        ReiniciarToolStripMenuItem1.Name = "ReiniciarToolStripMenuItem1"
-        ReiniciarToolStripMenuItem1.Size = New Size(212, 22)
-        ReiniciarToolStripMenuItem1.Text = "Reiniciar "
+        CopiaDeSeguridadToolStripMenuItem1.Text = "Crear copia de seguridad"
         ' 
         ' CargarCopiaDeSeguridadToolStripMenuItem
         ' 
         CargarCopiaDeSeguridadToolStripMenuItem.Name = "CargarCopiaDeSeguridadToolStripMenuItem"
         CargarCopiaDeSeguridadToolStripMenuItem.Size = New Size(212, 22)
         CargarCopiaDeSeguridadToolStripMenuItem.Text = "Cargar copia de seguridad"
+        ' 
+        ' ReiniciarToolStripMenuItem1
+        ' 
+        ReiniciarToolStripMenuItem1.Name = "ReiniciarToolStripMenuItem1"
+        ReiniciarToolStripMenuItem1.Size = New Size(212, 22)
+        ReiniciarToolStripMenuItem1.Text = "Reiniciar "
         ' 
         ' TabControl1
         ' 
@@ -250,6 +270,11 @@ Partial Class Form1
         DataGridView2.Size = New Size(773, 360)
         DataGridView2.TabIndex = 0
         ' 
+        ' Column6
+        ' 
+        Column6.HeaderText = "Tipo de empaque"
+        Column6.Name = "Column6"
+        ' 
         ' TabPage3
         ' 
         TabPage3.Controls.Add(DataGridView3)
@@ -270,6 +295,16 @@ Partial Class Form1
         DataGridView3.RowTemplate.Height = 25
         DataGridView3.Size = New Size(774, 360)
         DataGridView3.TabIndex = 0
+        ' 
+        ' Column7
+        ' 
+        Column7.HeaderText = "Durabilidad"
+        Column7.Name = "Column7"
+        ' 
+        ' Column8
+        ' 
+        Column8.HeaderText = "Descripción"
+        Column8.Name = "Column8"
         ' 
         ' HScrollBar1
         ' 
@@ -302,7 +337,7 @@ Partial Class Form1
         Button1.Name = "Button1"
         Button1.Size = New Size(18, 23)
         Button1.TabIndex = 5
-        Button1.Text = "Button1"
+        Button1.Text = "+"
         Button1.UseVisualStyleBackColor = True
         ' 
         ' Button2
@@ -311,7 +346,7 @@ Partial Class Form1
         Button2.Name = "Button2"
         Button2.Size = New Size(21, 23)
         Button2.TabIndex = 6
-        Button2.Text = "Button2"
+        Button2.Text = "-"
         Button2.UseVisualStyleBackColor = True
         ' 
         ' Artículos
@@ -326,7 +361,7 @@ Partial Class Form1
         ' 
         ' Column3
         ' 
-        Column3.HeaderText = "Durabilidad"
+        Column3.HeaderText = "Importancia"
         Column3.Name = "Column3"
         ' 
         ' Column1
@@ -349,20 +384,10 @@ Partial Class Form1
         Column9.HeaderText = "Fecha de salida"
         Column9.Name = "Column9"
         ' 
-        ' Column6
+        ' ToolStripTextBox1
         ' 
-        Column6.HeaderText = "Tipo de empaque"
-        Column6.Name = "Column6"
-        ' 
-        ' Column7
-        ' 
-        Column7.HeaderText = "Durabilidad"
-        Column7.Name = "Column7"
-        ' 
-        ' Column8
-        ' 
-        Column8.HeaderText = "Descripción"
-        Column8.Name = "Column8"
+        ToolStripTextBox1.Name = "ToolStripTextBox1"
+        ToolStripTextBox1.Size = New Size(100, 23)
         ' 
         ' Form1
         ' 
@@ -426,6 +451,13 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents BuscarToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As DataGridViewTextBoxColumn
+    Friend WithEvents Column8 As DataGridViewTextBoxColumn
+    Friend WithEvents ConsumoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EnSuTotalidadToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents SaveFileDialog1 As SaveFileDialog
     Friend WithEvents Artículos As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
@@ -433,8 +465,6 @@ Partial Class Form1
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents Column5 As DataGridViewTextBoxColumn
     Friend WithEvents Column9 As DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
-    Friend WithEvents Column7 As DataGridViewTextBoxColumn
-    Friend WithEvents Column8 As DataGridViewTextBoxColumn
+    Friend WithEvents ToolStripTextBox1 As ToolStripTextBox
 
 End Class
