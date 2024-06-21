@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("Inventory-for-home-Desk-ver."),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e73aaac9ebc342af8bf32e9a996459d24429d2ce"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a6f5233137aaaed2e0711461efb1ae00bda3f93f"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("Inventory-for-home-Desk-ver."),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("Inventory-for-home-Desk-ver."),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
