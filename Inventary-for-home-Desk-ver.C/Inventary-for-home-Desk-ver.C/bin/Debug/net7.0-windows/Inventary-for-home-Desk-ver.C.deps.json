@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Inventary-for-home-Desk-ver.C/1.0.0": {
+        "runtime": {
+          "Inventary-for-home-Desk-ver.C.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Inventary-for-home-Desk-ver.C/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
