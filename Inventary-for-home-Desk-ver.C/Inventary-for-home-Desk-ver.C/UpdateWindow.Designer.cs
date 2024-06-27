@@ -31,7 +31,6 @@
             label1 = new Label();
             UpdateWinFinalizar = new Button();
             UpdateWinCancelar = new Button();
-            listBox1 = new ListBox();
             SuspendLayout();
             // 
             // label1
@@ -62,23 +61,11 @@
             UpdateWinCancelar.UseVisualStyleBackColor = true;
             UpdateWinCancelar.Click += UpdateWinCancelar_Click;
             // 
-            // listBox1
-            // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Items.AddRange(new object[] { "Artículos", "Regla de importancia" });
-            listBox1.Location = new Point(12, 37);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(134, 34);
-            listBox1.TabIndex = 3;
-            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
-            // 
             // UpdateWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(listBox1);
             Controls.Add(UpdateWinCancelar);
             Controls.Add(UpdateWinFinalizar);
             Controls.Add(label1);
@@ -93,6 +80,5 @@
         private Label label1;
         private Button UpdateWinFinalizar;
         private Button UpdateWinCancelar;
-        private ListBox listBox1;
     }
 }

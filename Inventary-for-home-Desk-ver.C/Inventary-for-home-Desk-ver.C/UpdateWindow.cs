@@ -23,31 +23,31 @@ namespace Inventary_for_home_Desk_ver.C
             this.Close();
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //Obtengo el idSeleccionado
-            var opcion_Seleccionada = listBox1.SelectedIndex;
-            //EVALUO EL ID
-            switch (opcion_Seleccionada)
-            {
-                //SI es caso 0
-                case 0:
-                    labelOPC1.Visible = true;
-                    labelOPC2.Visible = false;
-                    break;
+        //private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    //Obtengo el idSeleccionado
+        //    var opcion_Seleccionada = listBox1.SelectedIndex;
+        //    //EVALUO EL ID
+        //    switch (opcion_Seleccionada)
+        //    {
+        //        //SI es caso 0
+        //        case 0:
+        //            labelOPC1.Visible = true;
+        //            labelOPC2.Visible = false;
+        //            break;
 
-                //SI es caso 1
-                case 1:
+        //        //SI es caso 1
+        //        case 1:
 
-                    labelOPC1.Visible = false;
-                    labelOPC2.Visible = true;
-                    break;
-            }
-        }
+        //            labelOPC1.Visible = false;
+        //            labelOPC2.Visible = true;
+        //            break;
+        //    }
+        //}
 
-        private void label2_Click(object sender, EventArgs e)
-        {
+        //private void label2_Click(object sender, EventArgs e)
+        //{
 
-        }
+        //}
     }
 }

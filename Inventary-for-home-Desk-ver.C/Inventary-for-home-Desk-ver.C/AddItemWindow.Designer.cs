@@ -41,16 +41,16 @@
             dateTimePicker1 = new DateTimePicker();
             dateTimePicker2 = new DateTimePicker();
             textBox2 = new TextBox();
-            tabControl1 = new TabControl();
+            TabAdd = new TabControl();
             tabPage1 = new TabPage();
             tabPage2 = new TabPage();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            label10 = new Label();
-            textBox4 = new TextBox();
             textBox5 = new TextBox();
-            tabControl1.SuspendLayout();
+            textBox4 = new TextBox();
+            label10 = new Label();
+            label9 = new Label();
+            label8 = new Label();
+            label7 = new Label();
+            TabAdd.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
             SuspendLayout();
@@ -163,15 +163,15 @@
             textBox2.Size = new Size(200, 23);
             textBox2.TabIndex = 17;
             // 
-            // tabControl1
+            // TabAdd
             // 
-            tabControl1.Controls.Add(tabPage1);
-            tabControl1.Controls.Add(tabPage2);
-            tabControl1.Location = new Point(27, 37);
-            tabControl1.Name = "tabControl1";
-            tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(379, 294);
-            tabControl1.TabIndex = 18;
+            TabAdd.Controls.Add(tabPage1);
+            TabAdd.Controls.Add(tabPage2);
+            TabAdd.Location = new Point(27, 37);
+            TabAdd.Name = "TabAdd";
+            TabAdd.SelectedIndex = 0;
+            TabAdd.Size = new Size(379, 294);
+            TabAdd.TabIndex = 18;
             // 
             // tabPage1
             // 
@@ -191,7 +191,7 @@
             tabPage1.Padding = new Padding(3);
             tabPage1.Size = new Size(371, 266);
             tabPage1.TabIndex = 0;
-            tabPage1.Text = "tabPage1";
+            tabPage1.Text = "Artículo";
             tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
@@ -206,35 +206,22 @@
             tabPage2.Padding = new Padding(3);
             tabPage2.Size = new Size(371, 266);
             tabPage2.TabIndex = 1;
-            tabPage2.Text = "tabPage2";
+            tabPage2.Text = "Regla de importancia";
             tabPage2.UseVisualStyleBackColor = true;
             // 
-            // label7
+            // textBox5
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(12, 9);
-            label7.Name = "label7";
-            label7.Size = new Size(223, 15);
-            label7.TabIndex = 19;
-            label7.Text = "Seleccione el elemento que desea añadir:";
+            textBox5.Location = new Point(15, 101);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(100, 23);
+            textBox5.TabIndex = 4;
             // 
-            // label8
+            // textBox4
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(6, 3);
-            label8.Name = "label8";
-            label8.Size = new Size(361, 15);
-            label8.TabIndex = 0;
-            label8.Text = "Introduzca los datos requeridos para el nuevo valor de importancia:";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(15, 39);
-            label9.Name = "label9";
-            label9.Size = new Size(154, 15);
-            label9.TabIndex = 1;
-            label9.Text = "Nuevo valor de importancia";
+            textBox4.Location = new Point(15, 57);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(100, 23);
+            textBox4.TabIndex = 3;
             // 
             // label10
             // 
@@ -245,19 +232,32 @@
             label10.TabIndex = 2;
             label10.Text = "Introdusca la descripción";
             // 
-            // textBox4
+            // label9
             // 
-            textBox4.Location = new Point(15, 57);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 23);
-            textBox4.TabIndex = 3;
+            label9.AutoSize = true;
+            label9.Location = new Point(15, 39);
+            label9.Name = "label9";
+            label9.Size = new Size(154, 15);
+            label9.TabIndex = 1;
+            label9.Text = "Nuevo valor de importancia";
             // 
-            // textBox5
+            // label8
             // 
-            textBox5.Location = new Point(15, 101);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(100, 23);
-            textBox5.TabIndex = 4;
+            label8.AutoSize = true;
+            label8.Location = new Point(6, 3);
+            label8.Name = "label8";
+            label8.Size = new Size(361, 15);
+            label8.TabIndex = 0;
+            label8.Text = "Introduzca los datos requeridos para el nuevo valor de importancia:";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(12, 9);
+            label7.Name = "label7";
+            label7.Size = new Size(223, 15);
+            label7.TabIndex = 19;
+            label7.Text = "Seleccione el elemento que desea añadir:";
             // 
             // AddItemWindow
             // 
@@ -265,14 +265,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(417, 393);
             Controls.Add(label7);
-            Controls.Add(tabControl1);
+            Controls.Add(TabAdd);
             Controls.Add(button2);
             Controls.Add(button1);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "AddItemWindow";
             Text = "Form2";
-            tabControl1.ResumeLayout(false);
+            TabAdd.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
             tabPage2.ResumeLayout(false);
@@ -296,7 +296,7 @@
         private DateTimePicker dateTimePicker1;
         private DateTimePicker dateTimePicker2;
         private TextBox textBox2;
-        private TabControl tabControl1;
+        private TabControl TabAdd;
         private TabPage tabPage1;
         private TabPage tabPage2;
         private TextBox textBox5;

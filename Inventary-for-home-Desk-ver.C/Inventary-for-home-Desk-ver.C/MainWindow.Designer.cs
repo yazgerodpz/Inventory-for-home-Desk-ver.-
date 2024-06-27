@@ -30,19 +30,14 @@
         {
             menuStrip1 = new MenuStrip();
             añadirToolStripMenuItem = new ToolStripMenuItem();
-            artículoToolStripMenuItem = new ToolStripMenuItem();
-            valorDeImportanciaToolStripMenuItem = new ToolStripMenuItem();
             actualizarToolStripMenuItem = new ToolStripMenuItem();
-            artículoToolStripMenuItem1 = new ToolStripMenuItem();
-            valorDeImportanciaToolStripMenuItem1 = new ToolStripMenuItem();
             eliminarToolStripMenuItem = new ToolStripMenuItem();
-            artículoToolStripMenuItem2 = new ToolStripMenuItem();
-            valorDeImportanciaToolStripMenuItem2 = new ToolStripMenuItem();
             buscarToolStripMenuItem = new ToolStripMenuItem();
             toolStripTextBox1 = new ToolStripTextBox();
+            avanzadoToolStripMenuItem = new ToolStripMenuItem();
             vScrollBar1 = new VScrollBar();
             hScrollBar1 = new HScrollBar();
-            tabControl1 = new TabControl();
+            TabMain = new TabControl();
             tabPage1 = new TabPage();
             dataGridView1 = new DataGridView();
             Column3 = new DataGridViewTextBoxColumn();
@@ -56,7 +51,7 @@
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             menuStrip1.SuspendLayout();
-            tabControl1.SuspendLayout();
+            TabMain.SuspendLayout();
             tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             tabPage2.SuspendLayout();
@@ -65,7 +60,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { añadirToolStripMenuItem, actualizarToolStripMenuItem, eliminarToolStripMenuItem, buscarToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { añadirToolStripMenuItem, actualizarToolStripMenuItem, eliminarToolStripMenuItem, buscarToolStripMenuItem, avanzadoToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -74,63 +69,24 @@
             // 
             // añadirToolStripMenuItem
             // 
-            añadirToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { artículoToolStripMenuItem, valorDeImportanciaToolStripMenuItem });
             añadirToolStripMenuItem.Name = "añadirToolStripMenuItem";
             añadirToolStripMenuItem.Size = new Size(54, 20);
             añadirToolStripMenuItem.Text = "Añadir";
-            // 
-            // artículoToolStripMenuItem
-            // 
-            artículoToolStripMenuItem.Name = "artículoToolStripMenuItem";
-            artículoToolStripMenuItem.Size = new Size(183, 22);
-            artículoToolStripMenuItem.Text = "Artículo";
-            artículoToolStripMenuItem.Click += artículoToolStripMenuItem_Click;
-            // 
-            // valorDeImportanciaToolStripMenuItem
-            // 
-            valorDeImportanciaToolStripMenuItem.Name = "valorDeImportanciaToolStripMenuItem";
-            valorDeImportanciaToolStripMenuItem.Size = new Size(183, 22);
-            valorDeImportanciaToolStripMenuItem.Text = "Valor de importancia";
-            valorDeImportanciaToolStripMenuItem.Click += valorDeImportanciaToolStripMenuItem_Click;
+            añadirToolStripMenuItem.Click += añadirToolStripMenuItem_Click;
             // 
             // actualizarToolStripMenuItem
             // 
-            actualizarToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { artículoToolStripMenuItem1, valorDeImportanciaToolStripMenuItem1 });
             actualizarToolStripMenuItem.Name = "actualizarToolStripMenuItem";
             actualizarToolStripMenuItem.Size = new Size(71, 20);
             actualizarToolStripMenuItem.Text = "Actualizar";
-            // 
-            // artículoToolStripMenuItem1
-            // 
-            artículoToolStripMenuItem1.Name = "artículoToolStripMenuItem1";
-            artículoToolStripMenuItem1.Size = new Size(183, 22);
-            artículoToolStripMenuItem1.Text = "Artículo";
-            artículoToolStripMenuItem1.Click += artículoToolStripMenuItem1_Click;
-            // 
-            // valorDeImportanciaToolStripMenuItem1
-            // 
-            valorDeImportanciaToolStripMenuItem1.Name = "valorDeImportanciaToolStripMenuItem1";
-            valorDeImportanciaToolStripMenuItem1.Size = new Size(183, 22);
-            valorDeImportanciaToolStripMenuItem1.Text = "Valor de importancia";
+            actualizarToolStripMenuItem.Click += actualizarToolStripMenuItem_Click;
             // 
             // eliminarToolStripMenuItem
             // 
-            eliminarToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { artículoToolStripMenuItem2, valorDeImportanciaToolStripMenuItem2 });
             eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
             eliminarToolStripMenuItem.Size = new Size(62, 20);
             eliminarToolStripMenuItem.Text = "Eliminar";
-            // 
-            // artículoToolStripMenuItem2
-            // 
-            artículoToolStripMenuItem2.Name = "artículoToolStripMenuItem2";
-            artículoToolStripMenuItem2.Size = new Size(183, 22);
-            artículoToolStripMenuItem2.Text = "Artículo";
-            // 
-            // valorDeImportanciaToolStripMenuItem2
-            // 
-            valorDeImportanciaToolStripMenuItem2.Name = "valorDeImportanciaToolStripMenuItem2";
-            valorDeImportanciaToolStripMenuItem2.Size = new Size(183, 22);
-            valorDeImportanciaToolStripMenuItem2.Text = "Valor de importancia";
+            eliminarToolStripMenuItem.Click += eliminarToolStripMenuItem_Click;
             // 
             // buscarToolStripMenuItem
             // 
@@ -138,11 +94,18 @@
             buscarToolStripMenuItem.Name = "buscarToolStripMenuItem";
             buscarToolStripMenuItem.Size = new Size(54, 20);
             buscarToolStripMenuItem.Text = "Buscar";
+            buscarToolStripMenuItem.Click += buscarToolStripMenuItem_Click;
             // 
             // toolStripTextBox1
             // 
             toolStripTextBox1.Name = "toolStripTextBox1";
             toolStripTextBox1.Size = new Size(100, 23);
+            // 
+            // avanzadoToolStripMenuItem
+            // 
+            avanzadoToolStripMenuItem.Name = "avanzadoToolStripMenuItem";
+            avanzadoToolStripMenuItem.Size = new Size(71, 20);
+            avanzadoToolStripMenuItem.Text = "Avanzado";
             // 
             // vScrollBar1
             // 
@@ -158,15 +121,15 @@
             hScrollBar1.Size = new Size(755, 17);
             hScrollBar1.TabIndex = 3;
             // 
-            // tabControl1
+            // TabMain
             // 
-            tabControl1.Controls.Add(tabPage1);
-            tabControl1.Controls.Add(tabPage2);
-            tabControl1.Location = new Point(12, 59);
-            tabControl1.Name = "tabControl1";
-            tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(759, 331);
-            tabControl1.TabIndex = 4;
+            TabMain.Controls.Add(tabPage1);
+            TabMain.Controls.Add(tabPage2);
+            TabMain.Location = new Point(12, 59);
+            TabMain.Name = "TabMain";
+            TabMain.SelectedIndex = 0;
+            TabMain.Size = new Size(759, 331);
+            TabMain.TabIndex = 4;
             // 
             // tabPage1
             // 
@@ -176,7 +139,7 @@
             tabPage1.Padding = new Padding(3);
             tabPage1.Size = new Size(751, 303);
             tabPage1.TabIndex = 0;
-            tabPage1.Text = "tabPage1";
+            tabPage1.Text = "Inventario";
             tabPage1.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
@@ -227,7 +190,7 @@
             tabPage2.Padding = new Padding(3);
             tabPage2.Size = new Size(751, 303);
             tabPage2.TabIndex = 1;
-            tabPage2.Text = "tabPage2";
+            tabPage2.Text = "Reglas de importancia";
             tabPage2.UseVisualStyleBackColor = true;
             // 
             // dataGridView2
@@ -256,7 +219,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(tabControl1);
+            Controls.Add(TabMain);
             Controls.Add(hScrollBar1);
             Controls.Add(vScrollBar1);
             Controls.Add(menuStrip1);
@@ -265,7 +228,7 @@
             Text = "Form1";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
-            tabControl1.ResumeLayout(false);
+            TabMain.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             tabPage2.ResumeLayout(false);
@@ -278,19 +241,13 @@
 
         private MenuStrip menuStrip1;
         private ToolStripMenuItem añadirToolStripMenuItem;
-        private ToolStripMenuItem artículoToolStripMenuItem;
-        private ToolStripMenuItem valorDeImportanciaToolStripMenuItem;
         private ToolStripMenuItem actualizarToolStripMenuItem;
-        private ToolStripMenuItem artículoToolStripMenuItem1;
-        private ToolStripMenuItem valorDeImportanciaToolStripMenuItem1;
         private ToolStripMenuItem eliminarToolStripMenuItem;
         private ToolStripMenuItem buscarToolStripMenuItem;
         private ToolStripTextBox toolStripTextBox1;
-        private ToolStripMenuItem artículoToolStripMenuItem2;
-        private ToolStripMenuItem valorDeImportanciaToolStripMenuItem2;
         private VScrollBar vScrollBar1;
         private HScrollBar hScrollBar1;
-        private TabControl tabControl1;
+        private TabControl TabMain;
         private TabPage tabPage1;
         private TabPage tabPage2;
         private DataGridView dataGridView1;
@@ -303,5 +260,6 @@
         private DataGridView dataGridView2;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
+        private ToolStripMenuItem avanzadoToolStripMenuItem;
     }
 }

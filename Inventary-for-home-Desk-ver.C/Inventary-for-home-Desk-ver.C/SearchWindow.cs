@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Inventary_for_home_Desk_ver.C
 {
-    public partial class AddImportanceRuleWindow : Form
+    public partial class SearchWindow : Form
     {
-        public AddImportanceRuleWindow()
+        public SearchWindow()
         {
             InitializeComponent();
+        }
+
+        private void CancelarBusqueda_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
