@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Yazryr\\Documentos\\Programación\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj": {}
+    "D:\\Yazryr\\Documentos\\Programación\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj": {}
   },
   "projects": {
-    "D:\\Yazryr\\Documentos\\Programación\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj": {
+    "D:\\Yazryr\\Documentos\\Programación\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Yazryr\\Documentos\\Programación\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj",
+        "projectUniqueName": "D:\\Yazryr\\Documentos\\Programación\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj",
         "projectName": "Inventary-for-home-Desk-ver.C",
-        "projectPath": "D:\\Yazryr\\Documentos\\Programación\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj",
+        "projectPath": "D:\\Yazryr\\Documentos\\Programación\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj",
         "packagesPath": "C:\\Users\\Yazryr\\.nuget\\packages\\",
-        "outputPath": "D:\\Yazryr\\Documentos\\Programación\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\obj\\",
+        "outputPath": "D:\\Yazryr\\Documentos\\Programación\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Programas\\Microsoft Visual Studio\\Shared\\NuGetPackages"
