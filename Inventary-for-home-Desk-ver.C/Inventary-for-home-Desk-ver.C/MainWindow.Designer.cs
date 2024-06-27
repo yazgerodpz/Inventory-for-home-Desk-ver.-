@@ -30,8 +30,6 @@
         {
             menuStrip1 = new MenuStrip();
             añadirToolStripMenuItem = new ToolStripMenuItem();
-            artículoToolStripMenuItem = new ToolStripMenuItem();
-            valorDeImportanciaToolStripMenuItem = new ToolStripMenuItem();
             actualizarToolStripMenuItem = new ToolStripMenuItem();
             artículoToolStripMenuItem1 = new ToolStripMenuItem();
             valorDeImportanciaToolStripMenuItem1 = new ToolStripMenuItem();
@@ -74,24 +72,10 @@
             // 
             // añadirToolStripMenuItem
             // 
-            añadirToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { artículoToolStripMenuItem, valorDeImportanciaToolStripMenuItem });
             añadirToolStripMenuItem.Name = "añadirToolStripMenuItem";
             añadirToolStripMenuItem.Size = new Size(54, 20);
             añadirToolStripMenuItem.Text = "Añadir";
-            // 
-            // artículoToolStripMenuItem
-            // 
-            artículoToolStripMenuItem.Name = "artículoToolStripMenuItem";
-            artículoToolStripMenuItem.Size = new Size(183, 22);
-            artículoToolStripMenuItem.Text = "Artículo";
-            artículoToolStripMenuItem.Click += artículoToolStripMenuItem_Click;
-            // 
-            // valorDeImportanciaToolStripMenuItem
-            // 
-            valorDeImportanciaToolStripMenuItem.Name = "valorDeImportanciaToolStripMenuItem";
-            valorDeImportanciaToolStripMenuItem.Size = new Size(183, 22);
-            valorDeImportanciaToolStripMenuItem.Text = "Valor de importancia";
-            valorDeImportanciaToolStripMenuItem.Click += valorDeImportanciaToolStripMenuItem_Click;
+            añadirToolStripMenuItem.Click += añadirToolStripMenuItem_Click;
             // 
             // actualizarToolStripMenuItem
             // 
@@ -278,8 +262,6 @@
 
         private MenuStrip menuStrip1;
         private ToolStripMenuItem añadirToolStripMenuItem;
-        private ToolStripMenuItem artículoToolStripMenuItem;
-        private ToolStripMenuItem valorDeImportanciaToolStripMenuItem;
         private ToolStripMenuItem actualizarToolStripMenuItem;
         private ToolStripMenuItem artículoToolStripMenuItem1;
         private ToolStripMenuItem valorDeImportanciaToolStripMenuItem1;

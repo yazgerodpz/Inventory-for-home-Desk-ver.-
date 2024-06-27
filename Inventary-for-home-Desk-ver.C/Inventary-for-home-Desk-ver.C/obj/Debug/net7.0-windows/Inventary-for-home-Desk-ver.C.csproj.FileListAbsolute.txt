@@ -18,3 +18,16 @@ D:\Yazryr\Documentos\Programación\Inventary-for-home-Desk-ver.C\Inventary-for-h
 D:\Yazryr\Documentos\Programación\Inventary-for-home-Desk-ver.C\Inventary-for-home-Desk-ver.C\obj\Debug\net7.0-windows\Inventary_for_home_Desk_ver.C.AddImportanceRuleWindow.resources
 D:\Yazryr\Documentos\Programación\Inventary-for-home-Desk-ver.C\Inventary-for-home-Desk-ver.C\obj\Debug\net7.0-windows\Inventary_for_home_Desk_ver.C.DeletedWindow.resources
 D:\Yazryr\Documentos\Programación\Inventary-for-home-Desk-ver.C\Inventary-for-home-Desk-ver.C\obj\Debug\net7.0-windows\Inventary_for_home_Desk_ver.C.UpdateWindow.resources
+D:\Yazryr\Documentos\Programación\Inventory-for-home-Desk-ver.-\Inventary-for-home-Desk-ver.C\Inventary-for-home-Desk-ver.C\obj\Debug\net7.0-windows\Inventary_for_home_Desk_ver.C.DeletedWindow.resources
+D:\Yazryr\Documentos\Programación\Inventory-for-home-Desk-ver.-\Inventary-for-home-Desk-ver.C\Inventary-for-home-Desk-ver.C\obj\Debug\net7.0-windows\Inventary_for_home_Desk_ver.C.MainWindow.resources
+D:\Yazryr\Documentos\Programación\Inventory-for-home-Desk-ver.-\Inventary-for-home-Desk-ver.C\Inventary-for-home-Desk-ver.C\obj\Debug\net7.0-windows\Inventary_for_home_Desk_ver.C.Properties.Resources.resources
+D:\Yazryr\Documentos\Programación\Inventory-for-home-Desk-ver.-\Inventary-for-home-Desk-ver.C\Inventary-for-home-Desk-ver.C\obj\Debug\net7.0-windows\Inventary_for_home_Desk_ver.C.UpdateWindow.resources
+D:\Yazryr\Documentos\Programación\Inventory-for-home-Desk-ver.-\Inventary-for-home-Desk-ver.C\Inventary-for-home-Desk-ver.C\obj\Debug\net7.0-windows\Inventary-for-home-Desk-ver.C.csproj.GenerateResource.cache
+D:\Yazryr\Documentos\Programación\Inventory-for-home-Desk-ver.-\Inventary-for-home-Desk-ver.C\Inventary-for-home-Desk-ver.C\obj\Debug\net7.0-windows\Inventary-for-home-Desk-ver.C.GeneratedMSBuildEditorConfig.editorconfig
+D:\Yazryr\Documentos\Programación\Inventory-for-home-Desk-ver.-\Inventary-for-home-Desk-ver.C\Inventary-for-home-Desk-ver.C\obj\Debug\net7.0-windows\Inventary-for-home-Desk-ver.C.AssemblyInfoInputs.cache
+D:\Yazryr\Documentos\Programación\Inventory-for-home-Desk-ver.-\Inventary-for-home-Desk-ver.C\Inventary-for-home-Desk-ver.C\obj\Debug\net7.0-windows\Inventary-for-home-Desk-ver.C.AssemblyInfo.cs
+D:\Yazryr\Documentos\Programación\Inventory-for-home-Desk-ver.-\Inventary-for-home-Desk-ver.C\Inventary-for-home-Desk-ver.C\obj\Debug\net7.0-windows\Inventary-for-home-Desk-ver.C.csproj.CoreCompileInputs.cache
+D:\Yazryr\Documentos\Programación\Inventory-for-home-Desk-ver.-\Inventary-for-home-Desk-ver.C\Inventary-for-home-Desk-ver.C\obj\Debug\net7.0-windows\Inventary-for-home-Desk-ver.C.sourcelink.json
+D:\Yazryr\Documentos\Programación\Inventory-for-home-Desk-ver.-\Inventary-for-home-Desk-ver.C\Inventary-for-home-Desk-ver.C\obj\Debug\net7.0-windows\Inventary-for-home-Desk-ver.C.dll
+D:\Yazryr\Documentos\Programación\Inventory-for-home-Desk-ver.-\Inventary-for-home-Desk-ver.C\Inventary-for-home-Desk-ver.C\obj\Debug\net7.0-windows\refint\Inventary-for-home-Desk-ver.C.dll
+D:\Yazryr\Documentos\Programación\Inventory-for-home-Desk-ver.-\Inventary-for-home-Desk-ver.C\Inventary-for-home-Desk-ver.C\obj\Debug\net7.0-windows\Inventary-for-home-Desk-ver.C.pdb

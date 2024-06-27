@@ -7,12 +7,6 @@
     <Compile Update="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AddItemWindow.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="AddImportanceRuleWindow.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="UpdateWindow.cs">
       <SubType>Form</SubType>
     </Compile>
