@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             CancelarBusqueda = new Button();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // CancelarBusqueda
             // 
-            CancelarBusqueda.Location = new Point(469, 52);
+            CancelarBusqueda.Location = new Point(678, 350);
             CancelarBusqueda.Name = "CancelarBusqueda";
             CancelarBusqueda.Size = new Size(75, 23);
             CancelarBusqueda.TabIndex = 0;
@@ -41,19 +43,31 @@
             CancelarBusqueda.UseVisualStyleBackColor = true;
             CancelarBusqueda.Click += CancelarBusqueda_Click;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(12, 12);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(702, 304);
+            dataGridView1.TabIndex = 1;
+            // 
             // SearchWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(765, 385);
+            Controls.Add(dataGridView1);
             Controls.Add(CancelarBusqueda);
             Name = "SearchWindow";
             Text = "SearchWindow";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Button CancelarBusqueda;
+        private DataGridView dataGridView1;
     }
 }

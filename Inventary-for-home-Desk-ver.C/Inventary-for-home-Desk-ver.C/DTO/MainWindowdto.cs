@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Inventary_for_home_Desk_ver.C.DTO
 {
-    internal class InventoryMain
+    internal class MainWindowdto
     {
     }
 }
