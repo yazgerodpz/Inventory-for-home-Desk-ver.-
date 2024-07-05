@@ -28,282 +28,343 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            textBox1 = new TextBox();
-            textBox3 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
-            dateTimePicker1 = new DateTimePicker();
-            dateTimePicker2 = new DateTimePicker();
-            textBox2 = new TextBox();
+            PreguntaART = new Label();
+            NameArt = new Label();
+            PreguntaCantidad = new Label();
+            pregunataPrioridad = new Label();
+            PreguntaFechaCom = new Label();
+            PreguntaFechaExp = new Label();
+            nombreArticulo = new TextBox();
+            TipoPioridad = new TextBox();
+            FinalizarAdd = new Button();
+            CancelarAdd = new Button();
+            FechaCompra = new DateTimePicker();
+            FechaExpiración = new DateTimePicker();
+            CantidadArt = new TextBox();
             TabAdd = new TabControl();
-            tabPage1 = new TabPage();
-            tabPage2 = new TabPage();
-            textBox5 = new TextBox();
-            textBox4 = new TextBox();
-            label10 = new Label();
-            label9 = new Label();
-            label8 = new Label();
-            label7 = new Label();
+            tabArt = new TabPage();
+            TipoEmpaque = new TextBox();
+            PreguntaEmpaque = new Label();
+            tabPrio = new TabPage();
+            DescPrio = new TextBox();
+            ResPrio = new TextBox();
+            NewDesc = new Label();
+            NewPrio = new Label();
+            PregPrio = new Label();
+            SelectArtPri = new Label();
+            tabStock = new TabPage();
+            PreguntaStock = new Label();
+            RespuestaStock = new TextBox();
             TabAdd.SuspendLayout();
-            tabPage1.SuspendLayout();
-            tabPage2.SuspendLayout();
+            tabArt.SuspendLayout();
+            tabPrio.SuspendLayout();
+            tabStock.SuspendLayout();
             SuspendLayout();
             // 
-            // label1
+            // PreguntaART
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(6, 3);
-            label1.Name = "label1";
-            label1.Size = new Size(292, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Introduzca los datos requeridos para el nuevo artículo:";
+            PreguntaART.AutoSize = true;
+            PreguntaART.Location = new Point(6, 3);
+            PreguntaART.Name = "PreguntaART";
+            PreguntaART.Size = new Size(292, 15);
+            PreguntaART.TabIndex = 0;
+            PreguntaART.Text = "Introduzca los datos requeridos para el nuevo artículo:";
             // 
-            // label2
+            // NameArt
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(14, 29);
-            label2.Name = "label2";
-            label2.Size = new Size(113, 15);
-            label2.TabIndex = 1;
-            label2.Text = "Nombre del artículo";
+            NameArt.AutoSize = true;
+            NameArt.Location = new Point(14, 29);
+            NameArt.Name = "NameArt";
+            NameArt.Size = new Size(113, 15);
+            NameArt.TabIndex = 1;
+            NameArt.Text = "Nombre del artículo";
             // 
-            // label3
+            // PreguntaCantidad
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(15, 73);
-            label3.Name = "label3";
-            label3.Size = new Size(119, 15);
-            label3.TabIndex = 2;
-            label3.Text = "Cantidad de artículos";
+            PreguntaCantidad.AutoSize = true;
+            PreguntaCantidad.Location = new Point(15, 73);
+            PreguntaCantidad.Name = "PreguntaCantidad";
+            PreguntaCantidad.Size = new Size(119, 15);
+            PreguntaCantidad.TabIndex = 2;
+            PreguntaCantidad.Text = "Cantidad de artículos";
             // 
-            // label4
+            // pregunataPrioridad
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(15, 117);
-            label4.Name = "label4";
-            label4.Size = new Size(116, 15);
-            label4.TabIndex = 3;
-            label4.Text = "Valor de importancia";
+            pregunataPrioridad.AutoSize = true;
+            pregunataPrioridad.Location = new Point(15, 117);
+            pregunataPrioridad.Name = "pregunataPrioridad";
+            pregunataPrioridad.Size = new Size(116, 15);
+            pregunataPrioridad.TabIndex = 3;
+            pregunataPrioridad.Text = "Valor de importancia";
             // 
-            // label5
+            // PreguntaFechaCom
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(15, 161);
-            label5.Name = "label5";
-            label5.Size = new Size(98, 15);
-            label5.TabIndex = 4;
-            label5.Text = "Fecha de compra";
+            PreguntaFechaCom.AutoSize = true;
+            PreguntaFechaCom.Location = new Point(14, 205);
+            PreguntaFechaCom.Name = "PreguntaFechaCom";
+            PreguntaFechaCom.Size = new Size(98, 15);
+            PreguntaFechaCom.TabIndex = 4;
+            PreguntaFechaCom.Text = "Fecha de compra";
             // 
-            // label6
+            // PreguntaFechaExp
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(15, 205);
-            label6.Name = "label6";
-            label6.Size = new Size(112, 15);
-            label6.TabIndex = 5;
-            label6.Text = "Fecha de expiración";
+            PreguntaFechaExp.AutoSize = true;
+            PreguntaFechaExp.Location = new Point(14, 249);
+            PreguntaFechaExp.Name = "PreguntaFechaExp";
+            PreguntaFechaExp.Size = new Size(112, 15);
+            PreguntaFechaExp.TabIndex = 5;
+            PreguntaFechaExp.Text = "Fecha de expiración";
             // 
-            // textBox1
+            // nombreArticulo
             // 
-            textBox1.Location = new Point(15, 47);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(200, 23);
-            textBox1.TabIndex = 8;
+            nombreArticulo.Location = new Point(15, 47);
+            nombreArticulo.Name = "nombreArticulo";
+            nombreArticulo.Size = new Size(235, 23);
+            nombreArticulo.TabIndex = 8;
             // 
-            // textBox3
+            // TipoPioridad
             // 
-            textBox3.Location = new Point(15, 135);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(200, 23);
-            textBox3.TabIndex = 10;
+            TipoPioridad.Location = new Point(15, 135);
+            TipoPioridad.Name = "TipoPioridad";
+            TipoPioridad.Size = new Size(235, 23);
+            TipoPioridad.TabIndex = 10;
             // 
-            // button1
+            // FinalizarAdd
             // 
-            button1.Location = new Point(250, 358);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 13;
-            button1.Text = "Finalizar";
-            button1.UseVisualStyleBackColor = true;
+            FinalizarAdd.Location = new Point(254, 385);
+            FinalizarAdd.Name = "FinalizarAdd";
+            FinalizarAdd.Size = new Size(75, 23);
+            FinalizarAdd.TabIndex = 13;
+            FinalizarAdd.Text = "Finalizar";
+            FinalizarAdd.UseVisualStyleBackColor = true;
+            FinalizarAdd.Click += FinalizarAddItem_Click;
             // 
-            // button2
+            // CancelarAdd
             // 
-            button2.Location = new Point(331, 358);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 14;
-            button2.Text = "Cancelar";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            CancelarAdd.Location = new Point(335, 385);
+            CancelarAdd.Name = "CancelarAdd";
+            CancelarAdd.Size = new Size(75, 23);
+            CancelarAdd.TabIndex = 14;
+            CancelarAdd.Text = "Cancelar";
+            CancelarAdd.UseVisualStyleBackColor = true;
+            CancelarAdd.Click += button2_Click;
             // 
-            // dateTimePicker1
+            // FechaCompra
             // 
-            dateTimePicker1.Location = new Point(15, 179);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(200, 23);
-            dateTimePicker1.TabIndex = 15;
+            FechaCompra.Location = new Point(14, 223);
+            FechaCompra.Name = "FechaCompra";
+            FechaCompra.Size = new Size(235, 23);
+            FechaCompra.TabIndex = 15;
             // 
-            // dateTimePicker2
+            // FechaExpiración
             // 
-            dateTimePicker2.Location = new Point(15, 223);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(200, 23);
-            dateTimePicker2.TabIndex = 16;
+            FechaExpiración.Location = new Point(14, 267);
+            FechaExpiración.Name = "FechaExpiración";
+            FechaExpiración.Size = new Size(235, 23);
+            FechaExpiración.TabIndex = 16;
             // 
-            // textBox2
+            // CantidadArt
             // 
-            textBox2.Location = new Point(15, 91);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(200, 23);
-            textBox2.TabIndex = 17;
+            CantidadArt.Location = new Point(15, 91);
+            CantidadArt.Name = "CantidadArt";
+            CantidadArt.Size = new Size(235, 23);
+            CantidadArt.TabIndex = 17;
             // 
             // TabAdd
             // 
-            TabAdd.Controls.Add(tabPage1);
-            TabAdd.Controls.Add(tabPage2);
+            TabAdd.Controls.Add(tabArt);
+            TabAdd.Controls.Add(tabStock);
+            TabAdd.Controls.Add(tabPrio);
             TabAdd.Location = new Point(27, 37);
             TabAdd.Name = "TabAdd";
             TabAdd.SelectedIndex = 0;
-            TabAdd.Size = new Size(379, 294);
+            TabAdd.Size = new Size(379, 331);
             TabAdd.TabIndex = 18;
             // 
-            // tabPage1
+            // tabArt
             // 
-            tabPage1.Controls.Add(dateTimePicker2);
-            tabPage1.Controls.Add(dateTimePicker1);
-            tabPage1.Controls.Add(textBox2);
-            tabPage1.Controls.Add(label6);
-            tabPage1.Controls.Add(label2);
-            tabPage1.Controls.Add(label5);
-            tabPage1.Controls.Add(textBox3);
-            tabPage1.Controls.Add(label1);
-            tabPage1.Controls.Add(textBox1);
-            tabPage1.Controls.Add(label4);
-            tabPage1.Controls.Add(label3);
-            tabPage1.Location = new Point(4, 24);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(371, 266);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "Artículo";
-            tabPage1.UseVisualStyleBackColor = true;
+            tabArt.Controls.Add(TipoEmpaque);
+            tabArt.Controls.Add(PreguntaEmpaque);
+            tabArt.Controls.Add(FechaExpiración);
+            tabArt.Controls.Add(FechaCompra);
+            tabArt.Controls.Add(CantidadArt);
+            tabArt.Controls.Add(PreguntaFechaExp);
+            tabArt.Controls.Add(NameArt);
+            tabArt.Controls.Add(PreguntaFechaCom);
+            tabArt.Controls.Add(TipoPioridad);
+            tabArt.Controls.Add(PreguntaART);
+            tabArt.Controls.Add(nombreArticulo);
+            tabArt.Controls.Add(pregunataPrioridad);
+            tabArt.Controls.Add(PreguntaCantidad);
+            tabArt.Location = new Point(4, 24);
+            tabArt.Name = "tabArt";
+            tabArt.Padding = new Padding(3);
+            tabArt.Size = new Size(371, 303);
+            tabArt.TabIndex = 0;
+            tabArt.Text = "Artículo";
+            tabArt.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // TipoEmpaque
             // 
-            tabPage2.Controls.Add(textBox5);
-            tabPage2.Controls.Add(textBox4);
-            tabPage2.Controls.Add(label10);
-            tabPage2.Controls.Add(label9);
-            tabPage2.Controls.Add(label8);
-            tabPage2.Location = new Point(4, 24);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(371, 266);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "Regla de importancia";
-            tabPage2.UseVisualStyleBackColor = true;
+            TipoEmpaque.Location = new Point(12, 179);
+            TipoEmpaque.Name = "TipoEmpaque";
+            TipoEmpaque.Size = new Size(238, 23);
+            TipoEmpaque.TabIndex = 19;
             // 
-            // textBox5
+            // PreguntaEmpaque
             // 
-            textBox5.Location = new Point(15, 101);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(100, 23);
-            textBox5.TabIndex = 4;
+            PreguntaEmpaque.AutoSize = true;
+            PreguntaEmpaque.Location = new Point(15, 161);
+            PreguntaEmpaque.Name = "PreguntaEmpaque";
+            PreguntaEmpaque.Size = new Size(99, 15);
+            PreguntaEmpaque.TabIndex = 18;
+            PreguntaEmpaque.Text = "Tipo de empaque";
             // 
-            // textBox4
+            // tabPrio
             // 
-            textBox4.Location = new Point(15, 57);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 23);
-            textBox4.TabIndex = 3;
+            tabPrio.Controls.Add(DescPrio);
+            tabPrio.Controls.Add(ResPrio);
+            tabPrio.Controls.Add(NewDesc);
+            tabPrio.Controls.Add(NewPrio);
+            tabPrio.Controls.Add(PregPrio);
+            tabPrio.Location = new Point(4, 24);
+            tabPrio.Name = "tabPrio";
+            tabPrio.Padding = new Padding(3);
+            tabPrio.Size = new Size(371, 303);
+            tabPrio.TabIndex = 1;
+            tabPrio.Text = "Regla de importancia";
+            tabPrio.UseVisualStyleBackColor = true;
             // 
-            // label10
+            // DescPrio
             // 
-            label10.AutoSize = true;
-            label10.Location = new Point(15, 83);
-            label10.Name = "label10";
-            label10.Size = new Size(139, 15);
-            label10.TabIndex = 2;
-            label10.Text = "Introdusca la descripción";
+            DescPrio.Location = new Point(15, 101);
+            DescPrio.Name = "DescPrio";
+            DescPrio.Size = new Size(154, 23);
+            DescPrio.TabIndex = 4;
             // 
-            // label9
+            // ResPrio
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(15, 39);
-            label9.Name = "label9";
-            label9.Size = new Size(154, 15);
-            label9.TabIndex = 1;
-            label9.Text = "Nuevo valor de importancia";
+            ResPrio.Location = new Point(15, 57);
+            ResPrio.Name = "ResPrio";
+            ResPrio.Size = new Size(154, 23);
+            ResPrio.TabIndex = 3;
             // 
-            // label8
+            // NewDesc
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(6, 3);
-            label8.Name = "label8";
-            label8.Size = new Size(361, 15);
-            label8.TabIndex = 0;
-            label8.Text = "Introduzca los datos requeridos para el nuevo valor de importancia:";
+            NewDesc.AutoSize = true;
+            NewDesc.Location = new Point(15, 83);
+            NewDesc.Name = "NewDesc";
+            NewDesc.Size = new Size(139, 15);
+            NewDesc.TabIndex = 2;
+            NewDesc.Text = "Introdusca la descripción";
             // 
-            // label7
+            // NewPrio
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(12, 9);
-            label7.Name = "label7";
-            label7.Size = new Size(223, 15);
-            label7.TabIndex = 19;
-            label7.Text = "Seleccione el elemento que desea añadir:";
+            NewPrio.AutoSize = true;
+            NewPrio.Location = new Point(15, 39);
+            NewPrio.Name = "NewPrio";
+            NewPrio.Size = new Size(154, 15);
+            NewPrio.TabIndex = 1;
+            NewPrio.Text = "Nuevo valor de importancia";
+            // 
+            // PregPrio
+            // 
+            PregPrio.AutoSize = true;
+            PregPrio.Location = new Point(6, 3);
+            PregPrio.Name = "PregPrio";
+            PregPrio.Size = new Size(361, 15);
+            PregPrio.TabIndex = 0;
+            PregPrio.Text = "Introduzca los datos requeridos para el nuevo valor de importancia:";
+            // 
+            // SelectArtPri
+            // 
+            SelectArtPri.AutoSize = true;
+            SelectArtPri.Location = new Point(12, 9);
+            SelectArtPri.Name = "SelectArtPri";
+            SelectArtPri.Size = new Size(223, 15);
+            SelectArtPri.TabIndex = 19;
+            SelectArtPri.Text = "Seleccione el elemento que desea añadir:";
+            // 
+            // tabStock
+            // 
+            tabStock.Controls.Add(RespuestaStock);
+            tabStock.Controls.Add(PreguntaStock);
+            tabStock.Location = new Point(4, 24);
+            tabStock.Name = "tabStock";
+            tabStock.Padding = new Padding(3);
+            tabStock.Size = new Size(371, 303);
+            tabStock.TabIndex = 2;
+            tabStock.Text = "Tipo de empaque";
+            tabStock.UseVisualStyleBackColor = true;
+            // 
+            // PreguntaStock
+            // 
+            PreguntaStock.AutoSize = true;
+            PreguntaStock.Location = new Point(3, 14);
+            PreguntaStock.Name = "PreguntaStock";
+            PreguntaStock.Size = new Size(277, 15);
+            PreguntaStock.TabIndex = 0;
+            PreguntaStock.Text = "Introdusca que tipo de empaque es y su capacidad:";
+            // 
+            // RespuestaStock
+            // 
+            RespuestaStock.Location = new Point(6, 32);
+            RespuestaStock.Name = "RespuestaStock";
+            RespuestaStock.Size = new Size(100, 23);
+            RespuestaStock.TabIndex = 2;
             // 
             // AddItemWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(417, 393);
-            Controls.Add(label7);
+            ClientSize = new Size(417, 414);
+            Controls.Add(SelectArtPri);
             Controls.Add(TabAdd);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(CancelarAdd);
+            Controls.Add(FinalizarAdd);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "AddItemWindow";
             Text = "Form2";
             TabAdd.ResumeLayout(false);
-            tabPage1.ResumeLayout(false);
-            tabPage1.PerformLayout();
-            tabPage2.ResumeLayout(false);
-            tabPage2.PerformLayout();
+            tabArt.ResumeLayout(false);
+            tabArt.PerformLayout();
+            tabPrio.ResumeLayout(false);
+            tabPrio.PerformLayout();
+            tabStock.ResumeLayout(false);
+            tabStock.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private TextBox textBox1;
-        private TextBox textBox3;
-        private Button button1;
-        private Button button2;
-        private DateTimePicker dateTimePicker1;
-        private DateTimePicker dateTimePicker2;
-        private TextBox textBox2;
+        private Label PreguntaART;
+        private Label NameArt;
+        private Label PreguntaCantidad;
+        private Label pregunataPrioridad;
+        private Label PreguntaFechaCom;
+        private Label PreguntaFechaExp;
+        private TextBox nombreArticulo;
+        private TextBox TipoPioridad;
+        private Button FinalizarAdd;
+        private Button CancelarAdd;
+        private DateTimePicker FechaCompra;
+        private DateTimePicker FechaExpiración;
+        private TextBox CantidadArt;
         private TabControl TabAdd;
-        private TabPage tabPage1;
-        private TabPage tabPage2;
-        private TextBox textBox5;
-        private TextBox textBox4;
-        private Label label10;
-        private Label label9;
-        private Label label8;
-        private Label label7;
+        private TabPage tabArt;
+        private TabPage tabPrio;
+        private TextBox DescPrio;
+        private TextBox ResPrio;
+        private Label NewDesc;
+        private Label NewPrio;
+        private Label PregPrio;
+        private Label SelectArtPri;
+        private Label PreguntaEmpaque;
+        private TextBox TipoEmpaque;
+        private TabPage tabStock;
+        private TextBox RespuestaStock;
+        private Label PreguntaStock;
     }
 }

@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Inventary_for_home_Desk_ver.C.DTO
 {
-    internal class MainWindowdto
+    public class CatTypeStockdto
     {
+        public string TypeStockName { get; set; } = null!;
     }
 }
