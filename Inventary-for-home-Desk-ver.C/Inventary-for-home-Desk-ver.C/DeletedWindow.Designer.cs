@@ -33,11 +33,11 @@
             label1 = new Label();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
-            tabPage2 = new TabPage();
-            label2 = new Label();
-            label3 = new Label();
             textBox1 = new TextBox();
+            label2 = new Label();
+            tabPage2 = new TabPage();
             textBox2 = new TextBox();
+            label3 = new Label();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
@@ -78,7 +78,7 @@
             tabControl1.Location = new Point(12, 41);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(512, 144);
+            tabControl1.Size = new Size(512, 122);
             tabControl1.TabIndex = 3;
             // 
             // tabPage1
@@ -88,10 +88,26 @@
             tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(504, 116);
+            tabPage1.Size = new Size(504, 94);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Artículos";
             tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(6, 34);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 23);
+            textBox1.TabIndex = 4;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(6, 16);
+            label2.Name = "label2";
+            label2.Size = new Size(183, 15);
+            label2.TabIndex = 4;
+            label2.Text = "Seleccione el artículo ha eliminar:";
             // 
             // tabPage2
             // 
@@ -105,14 +121,12 @@
             tabPage2.Text = "Reglas de importancia";
             tabPage2.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // textBox2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(6, 16);
-            label2.Name = "label2";
-            label2.Size = new Size(183, 15);
-            label2.TabIndex = 4;
-            label2.Text = "Seleccione el artículo ha eliminar:";
+            textBox2.Location = new Point(3, 34);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(100, 23);
+            textBox2.TabIndex = 5;
             // 
             // label3
             // 
@@ -122,20 +136,6 @@
             label3.Size = new Size(169, 15);
             label3.TabIndex = 4;
             label3.Text = "Seleccione la regla ha eliminar:";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(6, 34);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 4;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(3, 34);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 5;
             // 
             // DeletedWindow
             // 

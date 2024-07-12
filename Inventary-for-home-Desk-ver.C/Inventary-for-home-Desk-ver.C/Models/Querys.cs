@@ -9,6 +9,7 @@ namespace Inventary_for_home_Desk_ver.C.Models
 {
     public class Querys
     {
+        //Funcines de crear
         /// <summary>
         /// Funcion de añadir articulo
         /// </summary>
@@ -19,6 +20,7 @@ namespace Inventary_for_home_Desk_ver.C.Models
         /// <param name="_PDate">Fecha de compra</param>
         /// <param name="_EDate">Fecha de expiracion</param>
         /// <returns></returns>
+         //Nuevo Articulo
         public static async Task<bool> CrearNArtAsync(string _NuevoArtículo, string _numstock, string _TypePN, string _TypeSN, string _PDate, string _EDate)
         {
             try
@@ -71,6 +73,7 @@ namespace Inventary_for_home_Desk_ver.C.Models
             }
         }
 
+        //Funciones de visualisación
         public static async Task<List<StoredProcedure1>> ObtenerTablaItemAsync()
         {
             using (var db = new InventoryForHomeContext())
@@ -98,6 +101,8 @@ namespace Inventary_for_home_Desk_ver.C.Models
             }
         }
 
+
+        //Funciones de actualizar
         public static async Task<bool> ActArtAsync(string _ActName, string _numstock, string _TypePN, string _TypeSN, string _PDate, string _EDate, string _Actualizar)
         {
             try
@@ -148,6 +153,7 @@ namespace Inventary_for_home_Desk_ver.C.Models
             }
         }
 
+        //Funciones de eliminar
         public static async Task<bool> ElimArtAsync(string _Eliminar)
         {
             try

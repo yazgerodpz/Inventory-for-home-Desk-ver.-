@@ -26,6 +26,7 @@ namespace Inventary_for_home_Desk_ver.C
 
         private async void FinalizarAddItem_Click(object sender, EventArgs e)
         {
+            bool validado = true;
             //Evaluar si estas en Articulo o Regla de importancia
             if (TabAdd.SelectedIndex == 0) 
             {
@@ -36,14 +37,73 @@ namespace Inventary_for_home_Desk_ver.C
                 if (string.IsNullOrEmpty(nombreArticulo.Text))
                 {
                     MessageBox.Show("Falta Nombre de articulo");
+                    validado = false;
                 }
                 //Cantidad
+                var CantidAdd = CantidadArtAdd.Value.ToString();
+                if (string.IsNullOrEmpty(CantidAdd))
+                {
+                    MessageBox.Show("Falta agregar una cantidad");
+                    validado = false;
+                } 
                 //Prioridad
+                var PrioridAdd = TipoPrioArtAdd.Value.ToString();
+                if (string.IsNullOrEmpty(PrioridAdd)) 
+                {
+                    MessageBox.Show("Falta elegir la regla de importancia");
+                    validado = false;
+                }
                 //Empaque
-                //Fecha compra
-                //Fecha expiracion
-                //Enviar a la BD
-                //await Querys.CrearNArtAsync();
+                var EmpAdd = TipoEmpaqueAdd.Value.ToString();
+                if (string.IsNullOrEmpty(EmpAdd)) 
+                {
+                    MessageBox.Show("Falta elegir un empaque");
+                    validado = false;
+                }
+                //Fecha compra convertida a cadena con formato
+                var fechaCompraSTR = FechaCompra.Value.ToString("yyyy-MM-dd");
+                if (string.IsNullOrEmpty(fechaCompraSTR))
+                {
+                    
+                    MessageBox.Show("Falta especificar el fecha de compra del artículo");
+                    validado = false;
+                }
+                //Fecha expiracion convertida a cadena con formato
+                var fechaExpiraSTR = FechaExpiración.Value.ToString("yyyy-MM-dd");
+                if (string.IsNullOrEmpty(fechaExpiraSTR)) 
+                {
+                    MessageBox.Show("Falta especificar el fecha de expiracion del artículo");
+                    validado = false;
+                }
+
+                //SI TODO ESTA BIEN Y VALIDADO 
+                if (validado)
+                {
+                    //Enviar a la BD
+                    await Querys.CrearNArtAsync(nombreArticulo.Text, CantidAdd, PrioridAdd, EmpAdd, fechaCompraSTR, fechaExpiraSTR);
+                    //SE CIERRA VENTANA
+                    this.Close();
+                }
+            }
+
+            if (TabAdd.SelectedIndex == 1)
+            {
+                if (string.IsNullOrEmpty(RespuestaStock.Text))
+                {
+                    MessageBox.Show("Falta el tipo de empaque");
+                }
+            }
+
+            if (TabAdd.SelectedIndex == 2) 
+            {
+                if (string.IsNullOrEmpty(ResPrio.Text))
+                {
+                    MessageBox.Show("Falta la nombre de la nueva regla de prioridad");
+                }
+                if (string.IsNullOrEmpty(DescPrio.Text))
+                {
+                    MessageBox.Show("Falta la descripción de la regla de prioridad");
+                }
             }
         }
     }
