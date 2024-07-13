@@ -81,6 +81,7 @@ namespace Inventary_for_home_Desk_ver.C
                 {
                     //Enviar a la BD
                     await Querys.CrearNArtAsync(nombreArticulo.Text, CantidAdd, PrioridAdd, EmpAdd, fechaCompraSTR, fechaExpiraSTR);
+                    MessageBox.Show("Se guardo correctamente");
                     //SE CIERRA VENTANA
                     this.Close();
                 }
@@ -91,7 +92,21 @@ namespace Inventary_for_home_Desk_ver.C
                 if (string.IsNullOrEmpty(RespuestaStock.Text))
                 {
                     MessageBox.Show("Falta el tipo de empaque");
+                    //Desvalidar
+
                 }
+
+
+                //SI TODO ESTA BIEN Y VALIDADO 
+                if (validado)
+                {
+                    //Enviar a la BD
+                    await Querys.CrearNStockAsync(RespuestaStock.Text);
+                    MessageBox.Show("Se guardo correctamente");
+                    //SE CIERRA VENTANA
+                    this.Close();
+                }
+
             }
 
             if (TabAdd.SelectedIndex == 2) 
@@ -103,6 +118,15 @@ namespace Inventary_for_home_Desk_ver.C
                 if (string.IsNullOrEmpty(DescPrio.Text))
                 {
                     MessageBox.Show("Falta la descripción de la regla de prioridad");
+                }
+                //SI TODO ESTA BIEN Y VALIDADO 
+                if (validado)
+                {
+                    //Enviar a la BD
+                    await Querys.CrearNPrioridadAsync(ResPrio.Text, DescPrio.Text);
+                    MessageBox.Show("Se guardo correctamente");
+                    //SE CIERRA VENTANA
+                    this.Close();
                 }
             }
         }

@@ -74,7 +74,7 @@
             // 
             // UpdateWinFinalizar
             // 
-            UpdateWinFinalizar.Location = new Point(632, 410);
+            UpdateWinFinalizar.Location = new Point(249, 391);
             UpdateWinFinalizar.Name = "UpdateWinFinalizar";
             UpdateWinFinalizar.Size = new Size(75, 23);
             UpdateWinFinalizar.TabIndex = 1;
@@ -83,7 +83,7 @@
             // 
             // UpdateWinCancelar
             // 
-            UpdateWinCancelar.Location = new Point(713, 410);
+            UpdateWinCancelar.Location = new Point(330, 391);
             UpdateWinCancelar.Name = "UpdateWinCancelar";
             UpdateWinCancelar.Size = new Size(75, 23);
             UpdateWinCancelar.TabIndex = 2;
@@ -333,11 +333,13 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(414, 425);
             Controls.Add(tabControl1);
             Controls.Add(UpdateWinCancelar);
             Controls.Add(UpdateWinFinalizar);
             Controls.Add(label1);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "UpdateWindow";
             Text = "UpdateWindow";
             tabControl1.ResumeLayout(false);
