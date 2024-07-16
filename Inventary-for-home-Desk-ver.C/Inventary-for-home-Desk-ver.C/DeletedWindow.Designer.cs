@@ -32,15 +32,19 @@
             DeletedWinCancelar = new Button();
             label1 = new Label();
             tabControl1 = new TabControl();
-            tabPage1 = new TabPage();
+            tabDelItem = new TabPage();
             textBox1 = new TextBox();
             label2 = new Label();
-            tabPage2 = new TabPage();
+            tabDelReglaPrio = new TabPage();
             textBox2 = new TextBox();
             label3 = new Label();
+            tabDelStock = new TabPage();
+            DelQStock = new Label();
+            DelAnswerStock = new TextBox();
             tabControl1.SuspendLayout();
-            tabPage1.SuspendLayout();
-            tabPage2.SuspendLayout();
+            tabDelItem.SuspendLayout();
+            tabDelReglaPrio.SuspendLayout();
+            tabDelStock.SuspendLayout();
             SuspendLayout();
             // 
             // DeletedWinFinalizar
@@ -73,25 +77,26 @@
             // 
             // tabControl1
             // 
-            tabControl1.Controls.Add(tabPage1);
-            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Controls.Add(tabDelItem);
+            tabControl1.Controls.Add(tabDelStock);
+            tabControl1.Controls.Add(tabDelReglaPrio);
             tabControl1.Location = new Point(12, 41);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
             tabControl1.Size = new Size(512, 122);
             tabControl1.TabIndex = 3;
             // 
-            // tabPage1
+            // tabDelItem
             // 
-            tabPage1.Controls.Add(textBox1);
-            tabPage1.Controls.Add(label2);
-            tabPage1.Location = new Point(4, 24);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(504, 94);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "Artículos";
-            tabPage1.UseVisualStyleBackColor = true;
+            tabDelItem.Controls.Add(textBox1);
+            tabDelItem.Controls.Add(label2);
+            tabDelItem.Location = new Point(4, 24);
+            tabDelItem.Name = "tabDelItem";
+            tabDelItem.Padding = new Padding(3);
+            tabDelItem.Size = new Size(504, 94);
+            tabDelItem.TabIndex = 0;
+            tabDelItem.Text = "Artículos";
+            tabDelItem.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
@@ -109,17 +114,17 @@
             label2.TabIndex = 4;
             label2.Text = "Seleccione el artículo ha eliminar:";
             // 
-            // tabPage2
+            // tabDelReglaPrio
             // 
-            tabPage2.Controls.Add(textBox2);
-            tabPage2.Controls.Add(label3);
-            tabPage2.Location = new Point(4, 24);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(504, 116);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "Reglas de importancia";
-            tabPage2.UseVisualStyleBackColor = true;
+            tabDelReglaPrio.Controls.Add(textBox2);
+            tabDelReglaPrio.Controls.Add(label3);
+            tabDelReglaPrio.Location = new Point(4, 24);
+            tabDelReglaPrio.Name = "tabDelReglaPrio";
+            tabDelReglaPrio.Padding = new Padding(3);
+            tabDelReglaPrio.Size = new Size(504, 94);
+            tabDelReglaPrio.TabIndex = 1;
+            tabDelReglaPrio.Text = "Reglas de importancia";
+            tabDelReglaPrio.UseVisualStyleBackColor = true;
             // 
             // textBox2
             // 
@@ -137,6 +142,33 @@
             label3.TabIndex = 4;
             label3.Text = "Seleccione la regla ha eliminar:";
             // 
+            // tabDelStock
+            // 
+            tabDelStock.Controls.Add(DelAnswerStock);
+            tabDelStock.Controls.Add(DelQStock);
+            tabDelStock.Location = new Point(4, 24);
+            tabDelStock.Name = "tabDelStock";
+            tabDelStock.Size = new Size(504, 94);
+            tabDelStock.TabIndex = 2;
+            tabDelStock.Text = "Empaques";
+            tabDelStock.UseVisualStyleBackColor = true;
+            // 
+            // DelQStock
+            // 
+            DelQStock.AutoSize = true;
+            DelQStock.Location = new Point(6, 16);
+            DelQStock.Name = "DelQStock";
+            DelQStock.Size = new Size(233, 15);
+            DelQStock.TabIndex = 0;
+            DelQStock.Text = "Seleccione el empaque que desea eliminar:";
+            // 
+            // DelAnswerStock
+            // 
+            DelAnswerStock.Location = new Point(3, 34);
+            DelAnswerStock.Name = "DelAnswerStock";
+            DelAnswerStock.Size = new Size(100, 23);
+            DelAnswerStock.TabIndex = 1;
+            // 
             // DeletedWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -149,10 +181,12 @@
             Name = "DeletedWindow";
             Text = "DeletedWindow";
             tabControl1.ResumeLayout(false);
-            tabPage1.ResumeLayout(false);
-            tabPage1.PerformLayout();
-            tabPage2.ResumeLayout(false);
-            tabPage2.PerformLayout();
+            tabDelItem.ResumeLayout(false);
+            tabDelItem.PerformLayout();
+            tabDelReglaPrio.ResumeLayout(false);
+            tabDelReglaPrio.PerformLayout();
+            tabDelStock.ResumeLayout(false);
+            tabDelStock.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -163,11 +197,14 @@
         private Button DeletedWinCancelar;
         private Label label1;
         private TabControl tabControl1;
-        private TabPage tabPage1;
-        private TabPage tabPage2;
+        private TabPage tabDelItem;
+        private TabPage tabDelReglaPrio;
         private TextBox textBox1;
         private Label label2;
         private TextBox textBox2;
         private Label label3;
+        private TabPage tabDelStock;
+        private TextBox DelAnswerStock;
+        private Label DelQStock;
     }
 }

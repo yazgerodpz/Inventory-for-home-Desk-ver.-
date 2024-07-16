@@ -28,12 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "AdvancedWindow";
+            AdvCancelar = new Button();
+            SuspendLayout();
+            // 
+            // AdvCancelar
+            // 
+            AdvCancelar.Location = new Point(147, 185);
+            AdvCancelar.Name = "AdvCancelar";
+            AdvCancelar.Size = new Size(75, 23);
+            AdvCancelar.TabIndex = 0;
+            AdvCancelar.Text = "Cancelar";
+            AdvCancelar.UseVisualStyleBackColor = true;
+            AdvCancelar.Click += AdvCancelar_Click;
+            // 
+            // AdvancedWindow
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(AdvCancelar);
+            Name = "AdvancedWindow";
+            Text = "AdvancedWindow";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button AdvCancelar;
     }
 }

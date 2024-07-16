@@ -32,5 +32,6 @@ namespace Inventary_for_home_Desk_ver.C
             SearchWindow searchWindow = new SearchWindow();
             searchWindow.ShowDialog();
         }
+
     }
 }

@@ -41,6 +41,9 @@
             FechaExpiración = new DateTimePicker();
             TabAdd = new TabControl();
             tabArt = new TabPage();
+            TipoEmpaqueAdd = new NumericUpDown();
+            TipoPrioArtAdd = new NumericUpDown();
+            CantidadArtAdd = new NumericUpDown();
             PreguntaEmpaque = new Label();
             tabStock = new TabPage();
             RespuestaStock = new TextBox();
@@ -52,16 +55,13 @@
             NewPrio = new Label();
             PregPrio = new Label();
             SelectArtPri = new Label();
-            CantidadArtAdd = new NumericUpDown();
-            TipoPrioArtAdd = new NumericUpDown();
-            TipoEmpaqueAdd = new NumericUpDown();
             TabAdd.SuspendLayout();
             tabArt.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)TipoEmpaqueAdd).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)TipoPrioArtAdd).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)CantidadArtAdd).BeginInit();
             tabStock.SuspendLayout();
             tabPrio.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)CantidadArtAdd).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)TipoPrioArtAdd).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)TipoEmpaqueAdd).BeginInit();
             SuspendLayout();
             // 
             // PreguntaART
@@ -193,6 +193,34 @@
             tabArt.Text = "Artículo";
             tabArt.UseVisualStyleBackColor = true;
             // 
+            // TipoEmpaqueAdd
+            // 
+            TipoEmpaqueAdd.Location = new Point(14, 179);
+            TipoEmpaqueAdd.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            TipoEmpaqueAdd.Name = "TipoEmpaqueAdd";
+            TipoEmpaqueAdd.Size = new Size(98, 23);
+            TipoEmpaqueAdd.TabIndex = 22;
+            TipoEmpaqueAdd.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            // 
+            // TipoPrioArtAdd
+            // 
+            TipoPrioArtAdd.Location = new Point(15, 135);
+            TipoPrioArtAdd.Maximum = new decimal(new int[] { 3, 0, 0, 0 });
+            TipoPrioArtAdd.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            TipoPrioArtAdd.Name = "TipoPrioArtAdd";
+            TipoPrioArtAdd.Size = new Size(97, 23);
+            TipoPrioArtAdd.TabIndex = 21;
+            TipoPrioArtAdd.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            // 
+            // CantidadArtAdd
+            // 
+            CantidadArtAdd.Location = new Point(14, 91);
+            CantidadArtAdd.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            CantidadArtAdd.Name = "CantidadArtAdd";
+            CantidadArtAdd.Size = new Size(98, 23);
+            CantidadArtAdd.TabIndex = 20;
+            CantidadArtAdd.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            // 
             // PreguntaEmpaque
             // 
             PreguntaEmpaque.AutoSize = true;
@@ -295,34 +323,6 @@
             SelectArtPri.TabIndex = 19;
             SelectArtPri.Text = "Seleccione el elemento que desea añadir:";
             // 
-            // CantidadArtAdd
-            // 
-            CantidadArtAdd.Location = new Point(14, 91);
-            CantidadArtAdd.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
-            CantidadArtAdd.Name = "CantidadArtAdd";
-            CantidadArtAdd.Size = new Size(98, 23);
-            CantidadArtAdd.TabIndex = 20;
-            CantidadArtAdd.Value = new decimal(new int[] { 1, 0, 0, 0 });
-            // 
-            // TipoPrioArtAdd
-            // 
-            TipoPrioArtAdd.Location = new Point(15, 135);
-            TipoPrioArtAdd.Maximum = new decimal(new int[] { 3, 0, 0, 0 });
-            TipoPrioArtAdd.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
-            TipoPrioArtAdd.Name = "TipoPrioArtAdd";
-            TipoPrioArtAdd.Size = new Size(97, 23);
-            TipoPrioArtAdd.TabIndex = 21;
-            TipoPrioArtAdd.Value = new decimal(new int[] { 1, 0, 0, 0 });
-            // 
-            // TipoEmpaqueAdd
-            // 
-            TipoEmpaqueAdd.Location = new Point(14, 179);
-            TipoEmpaqueAdd.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
-            TipoEmpaqueAdd.Name = "TipoEmpaqueAdd";
-            TipoEmpaqueAdd.Size = new Size(98, 23);
-            TipoEmpaqueAdd.TabIndex = 22;
-            TipoEmpaqueAdd.Value = new decimal(new int[] { 1, 0, 0, 0 });
-            // 
             // AddItemWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -339,13 +339,13 @@
             TabAdd.ResumeLayout(false);
             tabArt.ResumeLayout(false);
             tabArt.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)TipoEmpaqueAdd).EndInit();
+            ((System.ComponentModel.ISupportInitialize)TipoPrioArtAdd).EndInit();
+            ((System.ComponentModel.ISupportInitialize)CantidadArtAdd).EndInit();
             tabStock.ResumeLayout(false);
             tabStock.PerformLayout();
             tabPrio.ResumeLayout(false);
             tabPrio.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)CantidadArtAdd).EndInit();
-            ((System.ComponentModel.ISupportInitialize)TipoPrioArtAdd).EndInit();
-            ((System.ComponentModel.ISupportInitialize)TipoEmpaqueAdd).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }

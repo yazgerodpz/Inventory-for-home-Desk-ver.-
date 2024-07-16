@@ -16,5 +16,10 @@ namespace Inventary_for_home_Desk_ver.C
         {
             InitializeComponent();
         }
+
+        private void AdvCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -23,7 +23,8 @@ namespace Inventary_for_home_Desk_ver.C
             //CERRAR ESTA INSTANCIA "THIS"
             this.Close();
         }
-
+        //Añadir
+        //Artículo
         private async void FinalizarAddItem_Click(object sender, EventArgs e)
         {
             bool validado = true;
@@ -87,6 +88,7 @@ namespace Inventary_for_home_Desk_ver.C
                 }
             }
 
+            //Empaques
             if (TabAdd.SelectedIndex == 1)
             {
                 if (string.IsNullOrEmpty(RespuestaStock.Text))
@@ -109,6 +111,7 @@ namespace Inventary_for_home_Desk_ver.C
 
             }
 
+            //Regla de Prioridad
             if (TabAdd.SelectedIndex == 2) 
             {
                 if (string.IsNullOrEmpty(ResPrio.Text))

@@ -34,33 +34,37 @@
             eliminarToolStripMenuItem = new ToolStripMenuItem();
             buscarToolStripMenuItem = new ToolStripMenuItem();
             toolStripTextBox1 = new ToolStripTextBox();
-            avanzadoToolStripMenuItem = new ToolStripMenuItem();
             vScrollBar1 = new VScrollBar();
             hScrollBar1 = new HScrollBar();
             TabMain = new TabControl();
-            tabPage1 = new TabPage();
-            dataGridView1 = new DataGridView();
+            tabItem = new TabPage();
+            dataGridViewItem = new DataGridView();
+            tabReglaPrioridad = new TabPage();
+            dataGridViewPrio = new DataGridView();
+            tabStock = new TabPage();
+            dataGridViewStock = new DataGridView();
+            Column9 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
             Column4 = new DataGridViewTextBoxColumn();
             Column5 = new DataGridViewTextBoxColumn();
             Column6 = new DataGridViewTextBoxColumn();
             Column7 = new DataGridViewTextBoxColumn();
             Column8 = new DataGridViewTextBoxColumn();
-            tabPage2 = new TabPage();
-            dataGridView2 = new DataGridView();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             menuStrip1.SuspendLayout();
             TabMain.SuspendLayout();
-            tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            tabItem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewItem).BeginInit();
+            tabReglaPrioridad.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewPrio).BeginInit();
+            tabStock.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewStock).BeginInit();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { añadirToolStripMenuItem, actualizarToolStripMenuItem, eliminarToolStripMenuItem, buscarToolStripMenuItem, avanzadoToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { añadirToolStripMenuItem, actualizarToolStripMenuItem, eliminarToolStripMenuItem, buscarToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -101,12 +105,6 @@
             toolStripTextBox1.Name = "toolStripTextBox1";
             toolStripTextBox1.Size = new Size(100, 23);
             // 
-            // avanzadoToolStripMenuItem
-            // 
-            avanzadoToolStripMenuItem.Name = "avanzadoToolStripMenuItem";
-            avanzadoToolStripMenuItem.Size = new Size(71, 20);
-            avanzadoToolStripMenuItem.Text = "Avanzado";
-            // 
             // vScrollBar1
             // 
             vScrollBar1.Location = new Point(774, 59);
@@ -123,34 +121,82 @@
             // 
             // TabMain
             // 
-            TabMain.Controls.Add(tabPage1);
-            TabMain.Controls.Add(tabPage2);
+            TabMain.Controls.Add(tabItem);
+            TabMain.Controls.Add(tabStock);
+            TabMain.Controls.Add(tabReglaPrioridad);
             TabMain.Location = new Point(12, 59);
             TabMain.Name = "TabMain";
             TabMain.SelectedIndex = 0;
             TabMain.Size = new Size(759, 331);
             TabMain.TabIndex = 4;
             // 
-            // tabPage1
+            // tabItem
             // 
-            tabPage1.Controls.Add(dataGridView1);
-            tabPage1.Location = new Point(4, 24);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(751, 303);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "Inventario";
-            tabPage1.UseVisualStyleBackColor = true;
+            tabItem.Controls.Add(dataGridViewItem);
+            tabItem.Location = new Point(4, 24);
+            tabItem.Name = "tabItem";
+            tabItem.Padding = new Padding(3);
+            tabItem.Size = new Size(751, 303);
+            tabItem.TabIndex = 0;
+            tabItem.Text = "Inventario";
+            tabItem.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dataGridViewItem
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column3, Column4, Column5, Column6, Column7, Column8 });
-            dataGridView1.Location = new Point(3, 3);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(748, 300);
-            dataGridView1.TabIndex = 0;
+            dataGridViewItem.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewItem.Columns.AddRange(new DataGridViewColumn[] { Column3, Column4, Column5, Column6, Column7, Column8 });
+            dataGridViewItem.Location = new Point(3, 3);
+            dataGridViewItem.Name = "dataGridViewItem";
+            dataGridViewItem.RowTemplate.Height = 25;
+            dataGridViewItem.Size = new Size(748, 300);
+            dataGridViewItem.TabIndex = 0;
+            // 
+            // tabReglaPrioridad
+            // 
+            tabReglaPrioridad.Controls.Add(dataGridViewPrio);
+            tabReglaPrioridad.Location = new Point(4, 24);
+            tabReglaPrioridad.Name = "tabReglaPrioridad";
+            tabReglaPrioridad.Padding = new Padding(3);
+            tabReglaPrioridad.Size = new Size(751, 303);
+            tabReglaPrioridad.TabIndex = 1;
+            tabReglaPrioridad.Text = "Reglas de prioridad";
+            tabReglaPrioridad.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewPrio
+            // 
+            dataGridViewPrio.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewPrio.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2 });
+            dataGridViewPrio.Location = new Point(3, 3);
+            dataGridViewPrio.Name = "dataGridViewPrio";
+            dataGridViewPrio.RowTemplate.Height = 25;
+            dataGridViewPrio.Size = new Size(748, 300);
+            dataGridViewPrio.TabIndex = 0;
+            // 
+            // tabStock
+            // 
+            tabStock.Controls.Add(dataGridViewStock);
+            tabStock.Location = new Point(4, 24);
+            tabStock.Name = "tabStock";
+            tabStock.Padding = new Padding(3);
+            tabStock.Size = new Size(751, 303);
+            tabStock.TabIndex = 2;
+            tabStock.Text = "Empaques";
+            tabStock.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewStock
+            // 
+            dataGridViewStock.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewStock.Columns.AddRange(new DataGridViewColumn[] { Column9 });
+            dataGridViewStock.Location = new Point(3, 6);
+            dataGridViewStock.Name = "dataGridViewStock";
+            dataGridViewStock.RowTemplate.Height = 25;
+            dataGridViewStock.Size = new Size(745, 294);
+            dataGridViewStock.TabIndex = 0;
+            // 
+            // Column9
+            // 
+            Column9.HeaderText = "Empaques";
+            Column9.Name = "Column9";
             // 
             // Column3
             // 
@@ -164,7 +210,7 @@
             // 
             // Column5
             // 
-            Column5.HeaderText = "Importancia";
+            Column5.HeaderText = "Regla de prioridad";
             Column5.Name = "Column5";
             // 
             // Column6
@@ -182,30 +228,9 @@
             Column8.HeaderText = "Fecha de salida";
             Column8.Name = "Column8";
             // 
-            // tabPage2
-            // 
-            tabPage2.Controls.Add(dataGridView2);
-            tabPage2.Location = new Point(4, 24);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(751, 303);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "Reglas de importancia";
-            tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView2
-            // 
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2 });
-            dataGridView2.Location = new Point(3, 3);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.RowTemplate.Height = 25;
-            dataGridView2.Size = new Size(748, 300);
-            dataGridView2.TabIndex = 0;
-            // 
             // Column1
             // 
-            Column1.HeaderText = "Importancia";
+            Column1.HeaderText = "Regla de prioridad";
             Column1.Name = "Column1";
             // 
             // Column2
@@ -229,10 +254,12 @@
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             TabMain.ResumeLayout(false);
-            tabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            tabItem.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewItem).EndInit();
+            tabReglaPrioridad.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewPrio).EndInit();
+            tabStock.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewStock).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -248,18 +275,20 @@
         private VScrollBar vScrollBar1;
         private HScrollBar hScrollBar1;
         private TabControl TabMain;
-        private TabPage tabPage1;
-        private TabPage tabPage2;
-        private DataGridView dataGridView1;
+        private TabPage tabItem;
+        private TabPage tabReglaPrioridad;
+        private DataGridView dataGridViewItem;
+        private DataGridView dataGridViewPrio;
+        private TabPage tabStock;
+        private DataGridView dataGridViewStock;
+        private DataGridViewTextBoxColumn Column9;
         private DataGridViewTextBoxColumn Column3;
         private DataGridViewTextBoxColumn Column4;
         private DataGridViewTextBoxColumn Column5;
         private DataGridViewTextBoxColumn Column6;
         private DataGridViewTextBoxColumn Column7;
         private DataGridViewTextBoxColumn Column8;
-        private DataGridView dataGridView2;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
-        private ToolStripMenuItem avanzadoToolStripMenuItem;
     }
 }
