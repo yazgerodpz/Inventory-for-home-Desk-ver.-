@@ -39,27 +39,30 @@
             TabMain = new TabControl();
             tabItem = new TabPage();
             dataGridViewItem = new DataGridView();
-            tabReglaPrioridad = new TabPage();
-            dataGridViewPrio = new DataGridView();
+            Id = new DataGridViewTextBoxColumn();
+            Item = new DataGridViewTextBoxColumn();
+            Stock = new DataGridViewTextBoxColumn();
+            Prioridad = new DataGridViewTextBoxColumn();
+            TipoEmpaque = new DataGridViewTextBoxColumn();
+            FechaCompra = new DataGridViewTextBoxColumn();
+            FechaExpiración = new DataGridViewTextBoxColumn();
             tabStock = new TabPage();
             dataGridViewStock = new DataGridView();
-            Column9 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            Column5 = new DataGridViewTextBoxColumn();
-            Column6 = new DataGridViewTextBoxColumn();
-            Column7 = new DataGridViewTextBoxColumn();
-            Column8 = new DataGridViewTextBoxColumn();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
+            IdStock = new DataGridViewTextBoxColumn();
+            TypeStock = new DataGridViewTextBoxColumn();
+            tabReglaPrioridad = new TabPage();
+            dataGridViewPrio = new DataGridView();
+            IdPriority = new DataGridViewTextBoxColumn();
+            PrioritaryName = new DataGridViewTextBoxColumn();
+            DescriptionPrio = new DataGridViewTextBoxColumn();
             menuStrip1.SuspendLayout();
             TabMain.SuspendLayout();
             tabItem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewItem).BeginInit();
-            tabReglaPrioridad.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewPrio).BeginInit();
             tabStock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewStock).BeginInit();
+            tabReglaPrioridad.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewPrio).BeginInit();
             SuspendLayout();
             // 
             // menuStrip1
@@ -107,9 +110,9 @@
             // 
             // vScrollBar1
             // 
-            vScrollBar1.Location = new Point(774, 59);
+            vScrollBar1.Location = new Point(774, 83);
             vScrollBar1.Name = "vScrollBar1";
-            vScrollBar1.Size = new Size(17, 327);
+            vScrollBar1.Size = new Size(17, 303);
             vScrollBar1.TabIndex = 2;
             // 
             // hScrollBar1
@@ -143,34 +146,57 @@
             // 
             // dataGridViewItem
             // 
+            dataGridViewItem.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewItem.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewItem.Columns.AddRange(new DataGridViewColumn[] { Column3, Column4, Column5, Column6, Column7, Column8 });
+            dataGridViewItem.Columns.AddRange(new DataGridViewColumn[] { Id, Item, Stock, Prioridad, TipoEmpaque, FechaCompra, FechaExpiración });
             dataGridViewItem.Location = new Point(3, 3);
             dataGridViewItem.Name = "dataGridViewItem";
             dataGridViewItem.RowTemplate.Height = 25;
             dataGridViewItem.Size = new Size(748, 300);
             dataGridViewItem.TabIndex = 0;
             // 
-            // tabReglaPrioridad
+            // Id
             // 
-            tabReglaPrioridad.Controls.Add(dataGridViewPrio);
-            tabReglaPrioridad.Location = new Point(4, 24);
-            tabReglaPrioridad.Name = "tabReglaPrioridad";
-            tabReglaPrioridad.Padding = new Padding(3);
-            tabReglaPrioridad.Size = new Size(751, 303);
-            tabReglaPrioridad.TabIndex = 1;
-            tabReglaPrioridad.Text = "Reglas de prioridad";
-            tabReglaPrioridad.UseVisualStyleBackColor = true;
+            Id.DataPropertyName = "IdItem";
+            Id.HeaderText = "IdInterno";
+            Id.Name = "Id";
+            Id.Visible = false;
             // 
-            // dataGridViewPrio
+            // Item
             // 
-            dataGridViewPrio.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewPrio.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2 });
-            dataGridViewPrio.Location = new Point(3, 3);
-            dataGridViewPrio.Name = "dataGridViewPrio";
-            dataGridViewPrio.RowTemplate.Height = 25;
-            dataGridViewPrio.Size = new Size(748, 300);
-            dataGridViewPrio.TabIndex = 0;
+            Item.DataPropertyName = "ItemName";
+            Item.HeaderText = "Artículos";
+            Item.Name = "Item";
+            // 
+            // Stock
+            // 
+            Stock.DataPropertyName = "Stock";
+            Stock.HeaderText = "Unidades disponibles";
+            Stock.Name = "Stock";
+            // 
+            // Prioridad
+            // 
+            Prioridad.DataPropertyName = "TypePrioritaryName";
+            Prioridad.HeaderText = "Regla de prioridad";
+            Prioridad.Name = "Prioridad";
+            // 
+            // TipoEmpaque
+            // 
+            TipoEmpaque.DataPropertyName = "TypeStockName";
+            TipoEmpaque.HeaderText = "Tipo de empaque";
+            TipoEmpaque.Name = "TipoEmpaque";
+            // 
+            // FechaCompra
+            // 
+            FechaCompra.DataPropertyName = "PurchesDate";
+            FechaCompra.HeaderText = "Fecha de compra";
+            FechaCompra.Name = "FechaCompra";
+            // 
+            // FechaExpiración
+            // 
+            FechaExpiración.DataPropertyName = "ExpirationDate";
+            FechaExpiración.HeaderText = "Fecha de expiración";
+            FechaExpiración.Name = "FechaExpiración";
             // 
             // tabStock
             // 
@@ -186,58 +212,66 @@
             // dataGridViewStock
             // 
             dataGridViewStock.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewStock.Columns.AddRange(new DataGridViewColumn[] { Column9 });
+            dataGridViewStock.Columns.AddRange(new DataGridViewColumn[] { IdStock, TypeStock });
             dataGridViewStock.Location = new Point(3, 6);
             dataGridViewStock.Name = "dataGridViewStock";
             dataGridViewStock.RowTemplate.Height = 25;
             dataGridViewStock.Size = new Size(745, 294);
             dataGridViewStock.TabIndex = 0;
             // 
-            // Column9
+            // IdStock
             // 
-            Column9.HeaderText = "Empaques";
-            Column9.Name = "Column9";
+            IdStock.DataPropertyName = "IdTypeStock";
+            IdStock.HeaderText = "IdInterno";
+            IdStock.Name = "IdStock";
+            IdStock.Visible = false;
             // 
-            // Column3
+            // TypeStock
             // 
-            Column3.HeaderText = "Artículos";
-            Column3.Name = "Column3";
+            TypeStock.DataPropertyName = "TypeStockName";
+            TypeStock.HeaderText = "Tipos de empaques";
+            TypeStock.Name = "TypeStock";
             // 
-            // Column4
+            // tabReglaPrioridad
             // 
-            Column4.HeaderText = "Unidades disponibles";
-            Column4.Name = "Column4";
+            tabReglaPrioridad.Controls.Add(dataGridViewPrio);
+            tabReglaPrioridad.Location = new Point(4, 24);
+            tabReglaPrioridad.Name = "tabReglaPrioridad";
+            tabReglaPrioridad.Padding = new Padding(3);
+            tabReglaPrioridad.Size = new Size(751, 303);
+            tabReglaPrioridad.TabIndex = 1;
+            tabReglaPrioridad.Text = "Reglas de prioridad";
+            tabReglaPrioridad.UseVisualStyleBackColor = true;
             // 
-            // Column5
+            // dataGridViewPrio
             // 
-            Column5.HeaderText = "Regla de prioridad";
-            Column5.Name = "Column5";
+            dataGridViewPrio.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewPrio.Columns.AddRange(new DataGridViewColumn[] { IdPriority, PrioritaryName, DescriptionPrio });
+            dataGridViewPrio.Location = new Point(6, 3);
+            dataGridViewPrio.Name = "dataGridViewPrio";
+            dataGridViewPrio.RowTemplate.Height = 25;
+            dataGridViewPrio.Size = new Size(748, 300);
+            dataGridViewPrio.TabIndex = 0;
             // 
-            // Column6
+            // IdPriority
             // 
-            Column6.HeaderText = "Fecha de compra";
-            Column6.Name = "Column6";
+            IdPriority.DataPropertyName = "IdTypePrioritary";
+            IdPriority.HeaderText = "IdInterno";
+            IdPriority.Name = "IdPriority";
+            IdPriority.Visible = false;
             // 
-            // Column7
+            // PrioritaryName
             // 
-            Column7.HeaderText = "Fecha de expiración";
-            Column7.Name = "Column7";
+            PrioritaryName.DataPropertyName = "TypePrioritaryName";
+            PrioritaryName.HeaderText = "Regla de prioridad";
+            PrioritaryName.Name = "PrioritaryName";
             // 
-            // Column8
+            // DescriptionPrio
             // 
-            Column8.HeaderText = "Fecha de salida";
-            Column8.Name = "Column8";
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "Regla de prioridad";
-            Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "Descripción";
-            Column2.Name = "Column2";
-            Column2.Width = 300;
+            DescriptionPrio.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            DescriptionPrio.DataPropertyName = "Description";
+            DescriptionPrio.HeaderText = "Descripción";
+            DescriptionPrio.Name = "DescriptionPrio";
             // 
             // MainWindow
             // 
@@ -256,10 +290,10 @@
             TabMain.ResumeLayout(false);
             tabItem.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridViewItem).EndInit();
-            tabReglaPrioridad.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridViewPrio).EndInit();
             tabStock.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridViewStock).EndInit();
+            tabReglaPrioridad.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewPrio).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -281,14 +315,17 @@
         private DataGridView dataGridViewPrio;
         private TabPage tabStock;
         private DataGridView dataGridViewStock;
-        private DataGridViewTextBoxColumn Column9;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
-        private DataGridViewTextBoxColumn Column5;
-        private DataGridViewTextBoxColumn Column6;
-        private DataGridViewTextBoxColumn Column7;
-        private DataGridViewTextBoxColumn Column8;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Id;
+        private DataGridViewTextBoxColumn Item;
+        private DataGridViewTextBoxColumn Stock;
+        private DataGridViewTextBoxColumn Prioridad;
+        private DataGridViewTextBoxColumn TipoEmpaque;
+        private DataGridViewTextBoxColumn FechaCompra;
+        private DataGridViewTextBoxColumn FechaExpiración;
+        private DataGridViewTextBoxColumn IdStock;
+        private DataGridViewTextBoxColumn TypeStock;
+        private DataGridViewTextBoxColumn IdPriority;
+        private DataGridViewTextBoxColumn PrioritaryName;
+        private DataGridViewTextBoxColumn DescriptionPrio;
     }
 }

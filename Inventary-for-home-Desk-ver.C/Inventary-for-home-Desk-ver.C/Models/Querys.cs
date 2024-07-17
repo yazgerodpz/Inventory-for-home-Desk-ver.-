@@ -83,6 +83,18 @@ namespace Inventary_for_home_Desk_ver.C.Models
             }
         }
 
+        //VERSION NO ASINCRONA
+        public static  List<StoredProcedure1> ObtenerTablaItem()
+        {
+            using (var db = new InventoryForHomeContext())
+            {
+                var StoredProcedure1 =  db.StoredProcedure1s.FromSql($"EXEC OptionMenu 2").ToList();
+                return StoredProcedure1;
+            }
+        }
+
+
+
         public static async Task<List<StoredProcedure3>> ObtenerTablaStockAsync()
         {
             using (var db = new InventoryForHomeContext())
