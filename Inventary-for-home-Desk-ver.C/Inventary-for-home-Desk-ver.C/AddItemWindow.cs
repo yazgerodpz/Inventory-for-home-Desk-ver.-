@@ -81,7 +81,12 @@ namespace Inventary_for_home_Desk_ver.C
                 if (validado)
                 {
                     //Enviar a la BD
-                    await Querys.CrearNArtAsync(nombreArticulo.Text, CantidAdd, PrioridAdd, EmpAdd, fechaCompraSTR, fechaExpiraSTR);
+                    await Querys.CrearNArtAsync(nombreArticulo.Text, 
+                        CantidAdd, 
+                        PrioridAdd, 
+                        EmpAdd,
+                        FechaCompra.Value,
+                        FechaExpiración.Value);
                     MessageBox.Show("Se guardo correctamente");
                     //SE CIERRA VENTANA
                     this.Close();

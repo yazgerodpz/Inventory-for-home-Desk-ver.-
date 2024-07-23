@@ -34,8 +34,6 @@
             eliminarToolStripMenuItem = new ToolStripMenuItem();
             buscarToolStripMenuItem = new ToolStripMenuItem();
             toolStripTextBox1 = new ToolStripTextBox();
-            vScrollBar1 = new VScrollBar();
-            hScrollBar1 = new HScrollBar();
             TabMain = new TabControl();
             tabItem = new TabPage();
             dataGridViewItem = new DataGridView();
@@ -48,10 +46,10 @@
             FechaExpiración = new DataGridViewTextBoxColumn();
             tabStock = new TabPage();
             dataGridViewStock = new DataGridView();
-            IdStock = new DataGridViewTextBoxColumn();
-            TypeStock = new DataGridViewTextBoxColumn();
             tabReglaPrioridad = new TabPage();
             dataGridViewPrio = new DataGridView();
+            IdStock = new DataGridViewTextBoxColumn();
+            TypeStock = new DataGridViewTextBoxColumn();
             IdPriority = new DataGridViewTextBoxColumn();
             PrioritaryName = new DataGridViewTextBoxColumn();
             DescriptionPrio = new DataGridViewTextBoxColumn();
@@ -70,7 +68,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { añadirToolStripMenuItem, actualizarToolStripMenuItem, eliminarToolStripMenuItem, buscarToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.Size = new Size(782, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -108,26 +106,12 @@
             toolStripTextBox1.Name = "toolStripTextBox1";
             toolStripTextBox1.Size = new Size(100, 23);
             // 
-            // vScrollBar1
-            // 
-            vScrollBar1.Location = new Point(774, 83);
-            vScrollBar1.Name = "vScrollBar1";
-            vScrollBar1.Size = new Size(17, 303);
-            vScrollBar1.TabIndex = 2;
-            // 
-            // hScrollBar1
-            // 
-            hScrollBar1.Location = new Point(12, 393);
-            hScrollBar1.Name = "hScrollBar1";
-            hScrollBar1.Size = new Size(755, 17);
-            hScrollBar1.TabIndex = 3;
-            // 
             // TabMain
             // 
             TabMain.Controls.Add(tabItem);
             TabMain.Controls.Add(tabStock);
             TabMain.Controls.Add(tabReglaPrioridad);
-            TabMain.Location = new Point(12, 59);
+            TabMain.Location = new Point(12, 44);
             TabMain.Name = "TabMain";
             TabMain.SelectedIndex = 0;
             TabMain.Size = new Size(759, 331);
@@ -158,9 +142,8 @@
             // Id
             // 
             Id.DataPropertyName = "IdItem";
-            Id.HeaderText = "IdInterno";
+            Id.HeaderText = "Id";
             Id.Name = "Id";
-            Id.Visible = false;
             // 
             // Item
             // 
@@ -219,19 +202,6 @@
             dataGridViewStock.Size = new Size(745, 294);
             dataGridViewStock.TabIndex = 0;
             // 
-            // IdStock
-            // 
-            IdStock.DataPropertyName = "IdTypeStock";
-            IdStock.HeaderText = "IdInterno";
-            IdStock.Name = "IdStock";
-            IdStock.Visible = false;
-            // 
-            // TypeStock
-            // 
-            TypeStock.DataPropertyName = "TypeStockName";
-            TypeStock.HeaderText = "Tipos de empaques";
-            TypeStock.Name = "TypeStock";
-            // 
             // tabReglaPrioridad
             // 
             tabReglaPrioridad.Controls.Add(dataGridViewPrio);
@@ -253,12 +223,23 @@
             dataGridViewPrio.Size = new Size(748, 300);
             dataGridViewPrio.TabIndex = 0;
             // 
+            // IdStock
+            // 
+            IdStock.DataPropertyName = "IdTypeStock";
+            IdStock.HeaderText = "Id";
+            IdStock.Name = "IdStock";
+            // 
+            // TypeStock
+            // 
+            TypeStock.DataPropertyName = "TypeStockName";
+            TypeStock.HeaderText = "Tipos de empaques";
+            TypeStock.Name = "TypeStock";
+            // 
             // IdPriority
             // 
             IdPriority.DataPropertyName = "IdTypePrioritary";
-            IdPriority.HeaderText = "IdInterno";
+            IdPriority.HeaderText = "Id";
             IdPriority.Name = "IdPriority";
-            IdPriority.Visible = false;
             // 
             // PrioritaryName
             // 
@@ -277,10 +258,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(782, 387);
             Controls.Add(TabMain);
-            Controls.Add(hScrollBar1);
-            Controls.Add(vScrollBar1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "MainWindow";
@@ -306,8 +285,6 @@
         private ToolStripMenuItem eliminarToolStripMenuItem;
         private ToolStripMenuItem buscarToolStripMenuItem;
         private ToolStripTextBox toolStripTextBox1;
-        private VScrollBar vScrollBar1;
-        private HScrollBar hScrollBar1;
         private TabControl TabMain;
         private TabPage tabItem;
         private TabPage tabReglaPrioridad;

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,7 +22,7 @@ namespace Inventary_for_home_Desk_ver.C.Models
         /// <param name="_EDate">Fecha de expiracion</param>
         /// <returns></returns>
          //Nuevo Articulo
-        public static async Task<bool> CrearNArtAsync(string _NuevoArtículo, string _numstock, string _TypePN, string _TypeSN, string _PDate, string _EDate)
+        public static async Task<bool> CrearNArtAsync(string _NuevoArtículo, string _numstock, string _TypePN, string _TypeSN, DateTime _PDate, DateTime _EDate)
         {
             try
             {
@@ -93,8 +94,6 @@ namespace Inventary_for_home_Desk_ver.C.Models
             }
         }
 
-
-
         public static async Task<List<StoredProcedure3>> ObtenerTablaStockAsync()
         {
             using (var db = new InventoryForHomeContext())
@@ -112,7 +111,6 @@ namespace Inventary_for_home_Desk_ver.C.Models
                 return StoredProcedure2;
             }
         }
-
 
         //Funciones de actualizar
         public static async Task<bool> ActArtAsync(string _ActName, string _numstock, string _TypePN, string _TypeSN, string _PDate, string _EDate, string _Actualizar)
@@ -218,5 +216,62 @@ namespace Inventary_for_home_Desk_ver.C.Models
                 return false;
             }
         }
+    
+        ///SECCION DE QUERYS CON LINQ
+        ///
+
+        public static async Task<StoredProcedure1> obtenerItemByIdAsync(int IdItem)
+        {
+            using (var db = new InventoryForHomeContext())
+            {
+                var QryResult = await (from a in db.Items
+                                       join b in db.CatTypePrioritaries
+                                       on a.IdTypePrioritary equals b.IdTypePrioritary
+                                       join c in db.CatTypeStocks
+                                       on a.IdTypeStock equals c.IdTypeStock
+                                       where a.Active == true 
+                                       && a.IdItem == IdItem
+
+                                       select new StoredProcedure1
+                                       {
+                                           ItemName = a.ItemName,
+                                           Stock = a.Stock,
+                                           TypePrioritaryName = b.TypePrioritaryName,
+                                           TypeStockName = c.TypeStockName,
+                                           PurchesDate = a.PurchesDate,
+                                           ExpirationDate = a.ExpirationDate,
+                                       }
+
+                                       ).ToListAsync();
+
+
+
+
+
+                return QryResult[0];
+            }
+        }
+
+        public static async Task<StoredProcedure3> obtenerStockByIdAsync(int IdStock)
+        {
+            using (var db = new InventoryForHomeContext())
+            {
+                var QryStock = await (from c in db.CatTypeStocks
+                                      where c.IdTypeStock == IdStock
+
+                                      select new StoredProcedure3
+                                      {
+                                          IdTypeStock = c.IdTypeStock,
+                                          TypeStockName = c.TypeStockName,
+                                      }
+
+                                      ).ToListAsync();
+
+
+
+                return QryStock[0];
+            }
+        }
+
     }
 }

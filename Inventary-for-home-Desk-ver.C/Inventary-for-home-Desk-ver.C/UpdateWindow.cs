@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Inventary_for_home_Desk_ver.C.Models;
 
 namespace Inventary_for_home_Desk_ver.C
 {
@@ -23,31 +24,52 @@ namespace Inventary_for_home_Desk_ver.C
             this.Close();
         }
 
-        //private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        //{
-        //    //Obtengo el idSeleccionado
-        //    var opcion_Seleccionada = listBox1.SelectedIndex;
-        //    //EVALUO EL ID
-        //    switch (opcion_Seleccionada)
-        //    {
-        //        //SI es caso 0
-        //        case 0:
-        //            labelOPC1.Visible = true;
-        //            labelOPC2.Visible = false;
-        //            break;
+        /// <summary>
+        /// PARA BUSCAR STOCK
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private async void IdStockFind_Click(object sender, EventArgs e)
+        {
+            //CORREGIR
+            if (IdTStock.Value > 0)
+            {
+                var stockId = Convert.ToInt32(IdTStock.Value);
+                ///LLAMAR LA FUNCION
+                var _stockBuscado = await Querys.obtenerStockByIdAsync(stockId);
+                ActualizarEmp.Text = _stockBuscado.TypeStockName;
+            }
+            else
+            {
+                ////ALERTA.
+            }
+        }
 
-        //        //SI es caso 1
-        //        case 1:
+        private async void UDSearch_Click(object sender, EventArgs e)
+        {
+            if (IdArtiFind.Value > 0)
+            {
+                ///Convertir a int
+                var itemId = Convert.ToInt32(IdArtiFind.Value);
+                ///LLAMAR LA FUNCION
+                var _itemBuscado = await Querys.obtenerItemByIdAsync(itemId);
+                //LLENAR INFORMACION SOLICITADA.
+                ArtElegido.Text = _itemBuscado.ItemName;
+                CantidadActual.Value = _itemBuscado.Stock;
+                //ReglaActual.Value = _itemBuscado.TypePrioritaryName;
+                //EmpActual.Value = _itemBuscado.TypeStockName;
+                CompraActual.Value = _itemBuscado.PurchesDate;
+                ExpiracionActual.Value = _itemBuscado.ExpirationDate;
+            }
+            else
+            {
+                ////ALERTA.
+            }
+        }
 
-        //            labelOPC1.Visible = false;
-        //            labelOPC2.Visible = true;
-        //            break;
-        //    }
-        //}
+        private void PrioFind_Click(object sender, EventArgs e)
+        {
 
-        //private void label2_Click(object sender, EventArgs e)
-        //{
-
-        //}
+        }
     }
 }
