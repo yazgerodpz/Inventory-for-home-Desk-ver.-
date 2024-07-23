@@ -31,36 +31,47 @@
             label1 = new Label();
             UpdateWinFinalizar = new Button();
             UpdateWinCancelar = new Button();
-            tabControl1 = new TabControl();
-            ArtículoAct = new TabPage();
-            textBox7 = new TextBox();
-            UpdateEmpaque = new Label();
-            dateTimePicker2 = new DateTimePicker();
-            dateTimePicker1 = new DateTimePicker();
-            label6 = new Label();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            label5 = new Label();
-            label2 = new Label();
-            textBox1 = new TextBox();
-            label3 = new Label();
-            label4 = new Label();
+            tabUpDate = new TabControl();
+            ArticuloAct = new TabPage();
+            UDSearch = new Button();
+            QIDArtoUD = new Label();
+            IdArtiFind = new NumericUpDown();
+            EmpActual = new NumericUpDown();
+            ReglaActual = new NumericUpDown();
+            CantidadActual = new NumericUpDown();
+            UDTypeS = new Label();
+            ExpiracionActual = new DateTimePicker();
+            CompraActual = new DateTimePicker();
+            UDExpiration = new Label();
+            UDPurchase = new Label();
+            UDItemName = new Label();
+            ArtElegido = new TextBox();
+            UDStock = new Label();
+            UDPrio = new Label();
             empaquesAct = new TabPage();
-            textBox9 = new TextBox();
+            IdStockFind = new Button();
+            IdTStock = new NumericUpDown();
+            ActualizarEmp = new TextBox();
             PreguntaEmpaqueAct = new Label();
-            ElecciónEmpaqueAct = new Label();
-            EmpaqueExistenteAct = new TextBox();
+            UDTypeStock = new Label();
             PrioridadAct = new TabPage();
-            textBox6 = new TextBox();
-            textBox5 = new TextBox();
-            label9 = new Label();
-            textBox4 = new TextBox();
-            label8 = new Label();
-            label7 = new Label();
-            tabControl1.SuspendLayout();
-            ArtículoAct.SuspendLayout();
+            PrioFind = new Button();
+            IdPrio = new NumericUpDown();
+            DescPrioAct = new TextBox();
+            RulePrioAct = new TextBox();
+            DescripciónActual = new Label();
+            PrioActual = new Label();
+            UDPrioridad = new Label();
+            tabUpDate.SuspendLayout();
+            ArticuloAct.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)IdArtiFind).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)EmpActual).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ReglaActual).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)CantidadActual).BeginInit();
             empaquesAct.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)IdTStock).BeginInit();
             PrioridadAct.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)IdPrio).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -74,7 +85,7 @@
             // 
             // UpdateWinFinalizar
             // 
-            UpdateWinFinalizar.Location = new Point(249, 391);
+            UpdateWinFinalizar.Location = new Point(246, 423);
             UpdateWinFinalizar.Name = "UpdateWinFinalizar";
             UpdateWinFinalizar.Size = new Size(75, 23);
             UpdateWinFinalizar.TabIndex = 1;
@@ -83,7 +94,7 @@
             // 
             // UpdateWinCancelar
             // 
-            UpdateWinCancelar.Location = new Point(330, 391);
+            UpdateWinCancelar.Location = new Point(327, 423);
             UpdateWinCancelar.Name = "UpdateWinCancelar";
             UpdateWinCancelar.Size = new Size(75, 23);
             UpdateWinCancelar.TabIndex = 2;
@@ -91,250 +102,301 @@
             UpdateWinCancelar.UseVisualStyleBackColor = true;
             UpdateWinCancelar.Click += UpdateWinCancelar_Click;
             // 
-            // tabControl1
+            // tabUpDate
             // 
-            tabControl1.Controls.Add(ArtículoAct);
-            tabControl1.Controls.Add(empaquesAct);
-            tabControl1.Controls.Add(PrioridadAct);
-            tabControl1.Location = new Point(12, 37);
-            tabControl1.Name = "tabControl1";
-            tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(393, 331);
-            tabControl1.TabIndex = 3;
+            tabUpDate.Controls.Add(ArticuloAct);
+            tabUpDate.Controls.Add(empaquesAct);
+            tabUpDate.Controls.Add(PrioridadAct);
+            tabUpDate.Location = new Point(12, 37);
+            tabUpDate.Name = "tabUpDate";
+            tabUpDate.SelectedIndex = 0;
+            tabUpDate.Size = new Size(393, 380);
+            tabUpDate.TabIndex = 3;
             // 
-            // ArtículoAct
+            // ArticuloAct
             // 
-            ArtículoAct.Controls.Add(textBox7);
-            ArtículoAct.Controls.Add(UpdateEmpaque);
-            ArtículoAct.Controls.Add(dateTimePicker2);
-            ArtículoAct.Controls.Add(dateTimePicker1);
-            ArtículoAct.Controls.Add(label6);
-            ArtículoAct.Controls.Add(textBox3);
-            ArtículoAct.Controls.Add(textBox2);
-            ArtículoAct.Controls.Add(label5);
-            ArtículoAct.Controls.Add(label2);
-            ArtículoAct.Controls.Add(textBox1);
-            ArtículoAct.Controls.Add(label3);
-            ArtículoAct.Controls.Add(label4);
-            ArtículoAct.Location = new Point(4, 24);
-            ArtículoAct.Name = "ArtículoAct";
-            ArtículoAct.Padding = new Padding(3);
-            ArtículoAct.Size = new Size(385, 303);
-            ArtículoAct.TabIndex = 0;
-            ArtículoAct.Text = "Artículo";
-            ArtículoAct.UseVisualStyleBackColor = true;
+            ArticuloAct.Controls.Add(UDSearch);
+            ArticuloAct.Controls.Add(QIDArtoUD);
+            ArticuloAct.Controls.Add(IdArtiFind);
+            ArticuloAct.Controls.Add(EmpActual);
+            ArticuloAct.Controls.Add(ReglaActual);
+            ArticuloAct.Controls.Add(CantidadActual);
+            ArticuloAct.Controls.Add(UDTypeS);
+            ArticuloAct.Controls.Add(ExpiracionActual);
+            ArticuloAct.Controls.Add(CompraActual);
+            ArticuloAct.Controls.Add(UDExpiration);
+            ArticuloAct.Controls.Add(UDPurchase);
+            ArticuloAct.Controls.Add(UDItemName);
+            ArticuloAct.Controls.Add(ArtElegido);
+            ArticuloAct.Controls.Add(UDStock);
+            ArticuloAct.Controls.Add(UDPrio);
+            ArticuloAct.Location = new Point(4, 24);
+            ArticuloAct.Name = "ArticuloAct";
+            ArticuloAct.Padding = new Padding(3);
+            ArticuloAct.Size = new Size(385, 352);
+            ArticuloAct.TabIndex = 0;
+            ArticuloAct.Text = "Artículo";
+            ArticuloAct.UseVisualStyleBackColor = true;
             // 
-            // textBox7
+            // UDSearch
             // 
-            textBox7.Location = new Point(6, 176);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(210, 23);
-            textBox7.TabIndex = 14;
+            UDSearch.Location = new Point(155, 37);
+            UDSearch.Name = "UDSearch";
+            UDSearch.Size = new Size(75, 23);
+            UDSearch.TabIndex = 19;
+            UDSearch.Text = "Buscar";
+            UDSearch.UseVisualStyleBackColor = true;
+            UDSearch.Click += UDSearch_Click;
             // 
-            // UpdateEmpaque
+            // QIDArtoUD
             // 
-            UpdateEmpaque.AutoSize = true;
-            UpdateEmpaque.Location = new Point(6, 158);
-            UpdateEmpaque.Name = "UpdateEmpaque";
-            UpdateEmpaque.Size = new Size(204, 15);
-            UpdateEmpaque.TabIndex = 13;
-            UpdateEmpaque.Text = "Introdusca el nuevo tipo de empaque";
+            QIDArtoUD.AutoSize = true;
+            QIDArtoUD.Location = new Point(6, 19);
+            QIDArtoUD.Name = "QIDArtoUD";
+            QIDArtoUD.Size = new Size(264, 15);
+            QIDArtoUD.TabIndex = 18;
+            QIDArtoUD.Text = "Seleccione el Id del Artículo que desea actualizar:";
             // 
-            // dateTimePicker2
+            // IdArtiFind
             // 
-            dateTimePicker2.Location = new Point(3, 264);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(213, 23);
-            dateTimePicker2.TabIndex = 12;
+            IdArtiFind.Location = new Point(6, 37);
+            IdArtiFind.Name = "IdArtiFind";
+            IdArtiFind.Size = new Size(120, 23);
+            IdArtiFind.TabIndex = 17;
             // 
-            // dateTimePicker1
+            // EmpActual
             // 
-            dateTimePicker1.Location = new Point(3, 220);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(213, 23);
-            dateTimePicker1.TabIndex = 11;
+            EmpActual.Location = new Point(6, 231);
+            EmpActual.Name = "EmpActual";
+            EmpActual.Size = new Size(120, 23);
+            EmpActual.TabIndex = 16;
             // 
-            // label6
+            // ReglaActual
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(0, 246);
-            label6.Name = "label6";
-            label6.Size = new Size(216, 15);
-            label6.TabIndex = 9;
-            label6.Text = "Introdusca la nueva fecha de expiración";
+            ReglaActual.Location = new Point(6, 187);
+            ReglaActual.Name = "ReglaActual";
+            ReglaActual.Size = new Size(120, 23);
+            ReglaActual.TabIndex = 15;
             // 
-            // textBox3
+            // CantidadActual
             // 
-            textBox3.Location = new Point(6, 132);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(210, 23);
-            textBox3.TabIndex = 11;
+            CantidadActual.Location = new Point(6, 143);
+            CantidadActual.Name = "CantidadActual";
+            CantidadActual.Size = new Size(120, 23);
+            CantidadActual.TabIndex = 14;
             // 
-            // textBox2
+            // UDTypeS
             // 
-            textBox2.Location = new Point(6, 88);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(210, 23);
-            textBox2.TabIndex = 11;
+            UDTypeS.AutoSize = true;
+            UDTypeS.Location = new Point(3, 213);
+            UDTypeS.Name = "UDTypeS";
+            UDTypeS.Size = new Size(102, 15);
+            UDTypeS.TabIndex = 13;
+            UDTypeS.Text = "Tipo de empaque:";
             // 
-            // label5
+            // ExpiracionActual
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(3, 202);
-            label5.Name = "label5";
-            label5.Size = new Size(158, 15);
-            label5.TabIndex = 8;
-            label5.Text = "Introdusca fecha de compra:";
+            ExpiracionActual.Location = new Point(3, 319);
+            ExpiracionActual.Name = "ExpiracionActual";
+            ExpiracionActual.Size = new Size(213, 23);
+            ExpiracionActual.TabIndex = 12;
             // 
-            // label2
+            // CompraActual
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(6, 14);
-            label2.Name = "label2";
-            label2.Size = new Size(227, 15);
-            label2.TabIndex = 4;
-            label2.Text = "Seleccione el artículo que desea actualizar";
+            CompraActual.Location = new Point(3, 275);
+            CompraActual.Name = "CompraActual";
+            CompraActual.Size = new Size(213, 23);
+            CompraActual.TabIndex = 11;
             // 
-            // textBox1
+            // UDExpiration
             // 
-            textBox1.Location = new Point(6, 32);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(210, 23);
-            textBox1.TabIndex = 5;
+            UDExpiration.AutoSize = true;
+            UDExpiration.Location = new Point(3, 301);
+            UDExpiration.Name = "UDExpiration";
+            UDExpiration.Size = new Size(115, 15);
+            UDExpiration.TabIndex = 9;
+            UDExpiration.Text = "Fecha de expiración:";
             // 
-            // label3
+            // UDPurchase
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(6, 70);
-            label3.Name = "label3";
-            label3.Size = new Size(162, 15);
-            label3.TabIndex = 6;
-            label3.Text = "Introdusca la nueva cantidad:";
+            UDPurchase.AutoSize = true;
+            UDPurchase.Location = new Point(0, 257);
+            UDPurchase.Name = "UDPurchase";
+            UDPurchase.Size = new Size(101, 15);
+            UDPurchase.TabIndex = 8;
+            UDPurchase.Text = "Fecha de compra:";
             // 
-            // label4
+            // UDItemName
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(6, 114);
-            label4.Name = "label4";
-            label4.Size = new Size(223, 15);
-            label4.TabIndex = 7;
-            label4.Text = "Introdusca el nuevo valor de importancia";
+            UDItemName.AutoSize = true;
+            UDItemName.Location = new Point(6, 81);
+            UDItemName.Name = "UDItemName";
+            UDItemName.Size = new Size(52, 15);
+            UDItemName.TabIndex = 4;
+            UDItemName.Text = "Artículo:";
+            // 
+            // ArtElegido
+            // 
+            ArtElegido.Location = new Point(6, 99);
+            ArtElegido.Name = "ArtElegido";
+            ArtElegido.Size = new Size(210, 23);
+            ArtElegido.TabIndex = 5;
+            // 
+            // UDStock
+            // 
+            UDStock.AutoSize = true;
+            UDStock.Location = new Point(6, 125);
+            UDStock.Name = "UDStock";
+            UDStock.Size = new Size(58, 15);
+            UDStock.TabIndex = 6;
+            UDStock.Text = "Cantidad:";
+            // 
+            // UDPrio
+            // 
+            UDPrio.AutoSize = true;
+            UDPrio.Location = new Point(3, 169);
+            UDPrio.Name = "UDPrio";
+            UDPrio.Size = new Size(106, 15);
+            UDPrio.TabIndex = 7;
+            UDPrio.Text = "Regla de Prioridad:";
             // 
             // empaquesAct
             // 
-            empaquesAct.Controls.Add(textBox9);
+            empaquesAct.Controls.Add(IdStockFind);
+            empaquesAct.Controls.Add(IdTStock);
+            empaquesAct.Controls.Add(ActualizarEmp);
             empaquesAct.Controls.Add(PreguntaEmpaqueAct);
-            empaquesAct.Controls.Add(ElecciónEmpaqueAct);
-            empaquesAct.Controls.Add(EmpaqueExistenteAct);
+            empaquesAct.Controls.Add(UDTypeStock);
             empaquesAct.Location = new Point(4, 24);
             empaquesAct.Name = "empaquesAct";
-            empaquesAct.Size = new Size(385, 303);
+            empaquesAct.Size = new Size(385, 352);
             empaquesAct.TabIndex = 2;
             empaquesAct.Text = "Empaques";
             empaquesAct.UseVisualStyleBackColor = true;
             // 
-            // textBox9
+            // IdStockFind
             // 
-            textBox9.Location = new Point(3, 90);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(100, 23);
-            textBox9.TabIndex = 3;
+            IdStockFind.Location = new Point(167, 34);
+            IdStockFind.Name = "IdStockFind";
+            IdStockFind.Size = new Size(75, 23);
+            IdStockFind.TabIndex = 16;
+            IdStockFind.Text = "Buscar";
+            IdStockFind.UseVisualStyleBackColor = true;
+            IdStockFind.Click += IdStockFind_Click;
+            // 
+            // IdTStock
+            // 
+            IdTStock.Location = new Point(3, 34);
+            IdTStock.Name = "IdTStock";
+            IdTStock.Size = new Size(120, 23);
+            IdTStock.TabIndex = 15;
+            // 
+            // ActualizarEmp
+            // 
+            ActualizarEmp.Location = new Point(3, 112);
+            ActualizarEmp.Name = "ActualizarEmp";
+            ActualizarEmp.Size = new Size(302, 23);
+            ActualizarEmp.TabIndex = 3;
             // 
             // PreguntaEmpaqueAct
             // 
             PreguntaEmpaqueAct.AutoSize = true;
-            PreguntaEmpaqueAct.Location = new Point(3, 72);
+            PreguntaEmpaqueAct.Location = new Point(3, 79);
             PreguntaEmpaqueAct.Name = "PreguntaEmpaqueAct";
-            PreguntaEmpaqueAct.Size = new Size(377, 15);
+            PreguntaEmpaqueAct.Size = new Size(317, 30);
             PreguntaEmpaqueAct.TabIndex = 2;
-            PreguntaEmpaqueAct.Text = "Introdusca el nombre y la cantidad del contenido del nuevo empaque:";
+            PreguntaEmpaqueAct.Text = "Introdusca el nuevo nombre y/o la cantidad  del contenido\r\ndel empaque:";
             // 
-            // ElecciónEmpaqueAct
+            // UDTypeStock
             // 
-            ElecciónEmpaqueAct.AutoSize = true;
-            ElecciónEmpaqueAct.Location = new Point(3, 14);
-            ElecciónEmpaqueAct.Name = "ElecciónEmpaqueAct";
-            ElecciónEmpaqueAct.Size = new Size(239, 15);
-            ElecciónEmpaqueAct.TabIndex = 1;
-            ElecciónEmpaqueAct.Text = "Seleccione el empaque que desea Actualizar";
-            // 
-            // EmpaqueExistenteAct
-            // 
-            EmpaqueExistenteAct.Location = new Point(3, 32);
-            EmpaqueExistenteAct.Name = "EmpaqueExistenteAct";
-            EmpaqueExistenteAct.Size = new Size(100, 23);
-            EmpaqueExistenteAct.TabIndex = 0;
+            UDTypeStock.AutoSize = true;
+            UDTypeStock.Location = new Point(3, 16);
+            UDTypeStock.Name = "UDTypeStock";
+            UDTypeStock.Size = new Size(273, 15);
+            UDTypeStock.TabIndex = 1;
+            UDTypeStock.Text = "Seleccione el ID del empaque que desea actualizar:";
             // 
             // PrioridadAct
             // 
-            PrioridadAct.Controls.Add(textBox6);
-            PrioridadAct.Controls.Add(textBox5);
-            PrioridadAct.Controls.Add(label9);
-            PrioridadAct.Controls.Add(textBox4);
-            PrioridadAct.Controls.Add(label8);
-            PrioridadAct.Controls.Add(label7);
+            PrioridadAct.Controls.Add(PrioFind);
+            PrioridadAct.Controls.Add(IdPrio);
+            PrioridadAct.Controls.Add(DescPrioAct);
+            PrioridadAct.Controls.Add(RulePrioAct);
+            PrioridadAct.Controls.Add(DescripciónActual);
+            PrioridadAct.Controls.Add(PrioActual);
+            PrioridadAct.Controls.Add(UDPrioridad);
             PrioridadAct.Location = new Point(4, 24);
             PrioridadAct.Name = "PrioridadAct";
             PrioridadAct.Padding = new Padding(3);
-            PrioridadAct.Size = new Size(385, 303);
+            PrioridadAct.Size = new Size(385, 352);
             PrioridadAct.TabIndex = 1;
-            PrioridadAct.Text = "Regla de importancia";
+            PrioridadAct.Text = "Regla de prioridad";
             PrioridadAct.UseVisualStyleBackColor = true;
             // 
-            // textBox6
+            // PrioFind
             // 
-            textBox6.Location = new Point(6, 140);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(100, 23);
-            textBox6.TabIndex = 7;
+            PrioFind.Location = new Point(156, 32);
+            PrioFind.Name = "PrioFind";
+            PrioFind.Size = new Size(75, 23);
+            PrioFind.TabIndex = 16;
+            PrioFind.Text = "Buscar";
+            PrioFind.UseVisualStyleBackColor = true;
+            PrioFind.Click += PrioFind_Click;
             // 
-            // textBox5
+            // IdPrio
             // 
-            textBox5.Location = new Point(6, 96);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(100, 23);
-            textBox5.TabIndex = 7;
+            IdPrio.Location = new Point(6, 32);
+            IdPrio.Name = "IdPrio";
+            IdPrio.Size = new Size(120, 23);
+            IdPrio.TabIndex = 15;
             // 
-            // label9
+            // DescPrioAct
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(6, 122);
-            label9.Name = "label9";
-            label9.Size = new Size(145, 15);
-            label9.TabIndex = 6;
-            label9.Text = "Introdusca su descripción:";
+            DescPrioAct.Location = new Point(6, 140);
+            DescPrioAct.Name = "DescPrioAct";
+            DescPrioAct.Size = new Size(100, 23);
+            DescPrioAct.TabIndex = 7;
             // 
-            // textBox4
+            // RulePrioAct
             // 
-            textBox4.Location = new Point(6, 32);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 23);
-            textBox4.TabIndex = 4;
+            RulePrioAct.Location = new Point(6, 96);
+            RulePrioAct.Name = "RulePrioAct";
+            RulePrioAct.Size = new Size(100, 23);
+            RulePrioAct.TabIndex = 7;
             // 
-            // label8
+            // DescripciónActual
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(6, 78);
-            label8.Name = "label8";
-            label8.Size = new Size(225, 15);
-            label8.TabIndex = 5;
-            label8.Text = "Introdusca la nueva regla de importancia:";
+            DescripciónActual.AutoSize = true;
+            DescripciónActual.Location = new Point(6, 122);
+            DescripciónActual.Name = "DescripciónActual";
+            DescripciónActual.Size = new Size(72, 15);
+            DescripciónActual.TabIndex = 6;
+            DescripciónActual.Text = "Descripción:";
             // 
-            // label7
+            // PrioActual
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(6, 14);
-            label7.Name = "label7";
-            label7.Size = new Size(187, 15);
-            label7.TabIndex = 4;
-            label7.Text = "Seleccione la regla de importancia";
+            PrioActual.AutoSize = true;
+            PrioActual.Location = new Point(6, 78);
+            PrioActual.Name = "PrioActual";
+            PrioActual.Size = new Size(106, 15);
+            PrioActual.TabIndex = 5;
+            PrioActual.Text = "Regla de prioridad:";
+            // 
+            // UDPrioridad
+            // 
+            UDPrioridad.AutoSize = true;
+            UDPrioridad.Location = new Point(6, 14);
+            UDPrioridad.Name = "UDPrioridad";
+            UDPrioridad.Size = new Size(283, 15);
+            UDPrioridad.TabIndex = 4;
+            UDPrioridad.Text = "Seleccione la regla de prioridad que desea actualizar:";
             // 
             // UpdateWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(414, 425);
-            Controls.Add(tabControl1);
+            ClientSize = new Size(414, 457);
+            Controls.Add(tabUpDate);
             Controls.Add(UpdateWinCancelar);
             Controls.Add(UpdateWinFinalizar);
             Controls.Add(label1);
@@ -342,13 +404,19 @@
             MinimizeBox = false;
             Name = "UpdateWindow";
             Text = "UpdateWindow";
-            tabControl1.ResumeLayout(false);
-            ArtículoAct.ResumeLayout(false);
-            ArtículoAct.PerformLayout();
+            tabUpDate.ResumeLayout(false);
+            ArticuloAct.ResumeLayout(false);
+            ArticuloAct.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)IdArtiFind).EndInit();
+            ((System.ComponentModel.ISupportInitialize)EmpActual).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ReglaActual).EndInit();
+            ((System.ComponentModel.ISupportInitialize)CantidadActual).EndInit();
             empaquesAct.ResumeLayout(false);
             empaquesAct.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)IdTStock).EndInit();
             PrioridadAct.ResumeLayout(false);
             PrioridadAct.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)IdPrio).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -358,31 +426,36 @@
         private Label label1;
         private Button UpdateWinFinalizar;
         private Button UpdateWinCancelar;
-        private TabControl tabControl1;
-        private TabPage ArtículoAct;
+        private TabControl tabUpDate;
+        private TabPage ArticuloAct;
         private TabPage PrioridadAct;
-        private Label label2;
-        private TextBox textBox1;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private DateTimePicker dateTimePicker2;
-        private DateTimePicker dateTimePicker1;
-        private TextBox textBox6;
-        private TextBox textBox5;
-        private Label label9;
-        private TextBox textBox4;
-        private Label label8;
-        private Label label7;
-        private TextBox textBox7;
-        private Label UpdateEmpaque;
+        private Label UDItemName;
+        private TextBox ArtElegido;
+        private Label UDStock;
+        private Label UDPrio;
+        private Label UDPurchase;
+        private Label UDExpiration;
+        private DateTimePicker ExpiracionActual;
+        private DateTimePicker CompraActual;
+        private TextBox DescPrioAct;
+        private TextBox RulePrioAct;
+        private Label DescripciónActual;
+        private Label PrioActual;
+        private Label UDPrioridad;
+        private Label UDTypeS;
         private TabPage empaquesAct;
-        private Label ElecciónEmpaqueAct;
-        private TextBox EmpaqueExistenteAct;
-        private TextBox textBox9;
+        private Label UDTypeStock;
+        private TextBox ActualizarEmp;
         private Label PreguntaEmpaqueAct;
+        private NumericUpDown EmpActual;
+        private NumericUpDown ReglaActual;
+        private NumericUpDown CantidadActual;
+        private Button UDSearch;
+        private Label QIDArtoUD;
+        private NumericUpDown IdArtiFind;
+        private Button IdStockFind;
+        private NumericUpDown IdTStock;
+        private Button PrioFind;
+        private NumericUpDown IdPrio;
     }
 }

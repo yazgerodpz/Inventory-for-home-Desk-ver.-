@@ -1,3 +1,4 @@
+using System.Diagnostics.Contracts;
 using Inventary_for_home_Desk_ver.C.Models;
 
 namespace Inventary_for_home_Desk_ver.C
@@ -8,6 +9,9 @@ namespace Inventary_for_home_Desk_ver.C
         List<StoredProcedure2> prioritys = new();
         List<StoredProcedure3> stocks = new();
 
+        /// <summary>
+        /// Carga inicial de ventana principal
+        /// </summary>
         public MainWindow()
         {
             ///INICIALIZAN INSTANCIAS DE OBJETO
@@ -35,22 +39,51 @@ namespace Inventary_for_home_Desk_ver.C
             dataGridViewPrio.DataSource = prioritys;
         }
 
-        private void añadirToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void añadirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AddItemWindow addItemWindow = new AddItemWindow();
             addItemWindow.ShowDialog();
+            // Seccion de actualizacion de datos despues de añadir
+            items = await Querys.ObtenerTablaItemAsync();
+            ////TABLA ITEMS
+            dataGridViewItem.DataSource = items;
+            ////TABLA EMPAQUES
+            stocks = await Querys.ObtenerTablaStockAsync();
+            dataGridViewStock.DataSource = stocks;
+            ////TABLA REGLAS DE PRIORIDAD
+            prioritys = await Querys.ObtenerTablaPrioridadAsync();
+            dataGridViewPrio.DataSource = prioritys;
+
         }
 
-        private void actualizarToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void actualizarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             UpdateWindow updateWindow = new UpdateWindow();
             updateWindow.ShowDialog();
+            ////TABLA ITEMS
+            dataGridViewItem.DataSource = items;
+            ////TABLA EMPAQUES
+            stocks = await Querys.ObtenerTablaStockAsync();
+            dataGridViewStock.DataSource = stocks;
+            ////TABLA REGLAS DE PRIORIDAD
+            prioritys = await Querys.ObtenerTablaPrioridadAsync();
+            dataGridViewPrio.DataSource = prioritys;
+
         }
 
-        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DeletedWindow deletedWindow = new DeletedWindow();
             deletedWindow.ShowDialog();
+            ////TABLA ITEMS
+            dataGridViewItem.DataSource = items;
+            ////TABLA EMPAQUES
+            stocks = await Querys.ObtenerTablaStockAsync();
+            dataGridViewStock.DataSource = stocks;
+            ////TABLA REGLAS DE PRIORIDAD
+            prioritys = await Querys.ObtenerTablaPrioridadAsync();
+            dataGridViewPrio.DataSource = prioritys;
+
         }
 
         private void buscarToolStripMenuItem_Click(object sender, EventArgs e)

@@ -92,3 +92,4 @@ D:\Yazryr\Documentos\Programación\Inventory-for-home-Desk-ver.-\Inventary-for-h
 D:\Yazryr\Documentos\Programación\Inventory-for-home-Desk-ver.-\Inventary-for-home-Desk-ver.C\Inventary-for-home-Desk-ver.C\bin\Debug\net7.0-windows\runtimes\win-x64\native\WebView2Loader.dll
 D:\Yazryr\Documentos\Programación\Inventory-for-home-Desk-ver.-\Inventary-for-home-Desk-ver.C\Inventary-for-home-Desk-ver.C\bin\Debug\net7.0-windows\runtimes\win-x86\native\WebView2Loader.dll
 D:\Yazryr\Documentos\Programación\Inventory-for-home-Desk-ver.-\Inventary-for-home-Desk-ver.C\Inventary-for-home-Desk-ver.C\bin\Debug\net7.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Yazryr\Documentos\Programación\Inventory-for-home-Desk-ver.-\Inventary-for-home-Desk-ver.C\Inventary-for-home-Desk-ver.C\obj\Debug\net7.0-windows\Inventary_for_home_Desk_ver.C.Prueba.resources
