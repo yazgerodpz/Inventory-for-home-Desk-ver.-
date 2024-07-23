@@ -67,9 +67,20 @@ namespace Inventary_for_home_Desk_ver.C
             }
         }
 
-        private void PrioFind_Click(object sender, EventArgs e)
+        private async void PrioFind_Click(object sender, EventArgs e)
         {
-
+            if (IdPrio.Value > 0)
+            {
+                var prioId = Convert.ToInt32(IdPrio.Value);
+                ///LLAMAR LA FUNCION
+                var _prioBuscado = await Querys.obtenerPrioByIdAsync(prioId);
+                RulePrioAct.Text = _prioBuscado.TypePrioritaryName;
+                DescPrioAct.Text = _prioBuscado.Description;
+            }
+            else
+            {
+                ////ALERTA.
+            }
         }
     }
 }

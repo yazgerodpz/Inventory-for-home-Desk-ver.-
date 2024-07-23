@@ -353,8 +353,9 @@
             // DescPrioAct
             // 
             DescPrioAct.Location = new Point(6, 140);
+            DescPrioAct.Multiline = true;
             DescPrioAct.Name = "DescPrioAct";
-            DescPrioAct.Size = new Size(100, 23);
+            DescPrioAct.Size = new Size(337, 114);
             DescPrioAct.TabIndex = 7;
             // 
             // RulePrioAct

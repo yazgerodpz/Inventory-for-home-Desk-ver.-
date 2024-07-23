@@ -11,10 +11,6 @@
       "RelativeMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|solutionrelative:inventary-for-home-desk-ver.c\\updatewindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|d:\\yazryr\\documentos\\programaci\u00F3n\\inventory-for-home-desk-ver.-\\inventary-for-home-desk-ver.c\\inventary-for-home-desk-ver.c\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|solutionrelative:inventary-for-home-desk-ver.c\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|d:\\yazryr\\documentos\\programaci\u00F3n\\inventory-for-home-desk-ver.-\\inventary-for-home-desk-ver.c\\inventary-for-home-desk-ver.c\\models\\querys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|solutionrelative:inventary-for-home-desk-ver.c\\models\\querys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,12 +19,20 @@
       "RelativeMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|solutionrelative:inventary-for-home-desk-ver.c\\additemwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|d:\\yazryr\\documentos\\programaci\u00F3n\\inventory-for-home-desk-ver.-\\inventary-for-home-desk-ver.c\\inventary-for-home-desk-ver.c\\models\\storedprocedure3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|solutionrelative:inventary-for-home-desk-ver.c\\models\\storedprocedure3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|d:\\yazryr\\documentos\\programaci\u00F3n\\inventory-for-home-desk-ver.-\\inventary-for-home-desk-ver.c\\inventary-for-home-desk-ver.c\\models\\storedprocedure2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|solutionrelative:inventary-for-home-desk-ver.c\\models\\storedprocedure2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\inventary-for-home-desk-ver.c\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|solutionrelative:inventary-for-home-desk-ver.c\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|d:\\yazryr\\documentos\\programaci\u00F3n\\inventory-for-home-desk-ver.-\\inventary-for-home-desk-ver.c\\inventary-for-home-desk-ver.c\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|solutionrelative:inventary-for-home-desk-ver.c\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|d:\\yazryr\\documentos\\programaci\u00F3n\\inventory-for-home-desk-ver.-\\inventary-for-home-desk-ver.c\\inventary-for-home-desk-ver.c\\models\\storedprocedure3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|solutionrelative:inventary-for-home-desk-ver.c\\models\\storedprocedure3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,13 +46,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "MainWindow.cs",
               "DocumentMoniker": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\MainWindow.cs",
               "RelativeDocumentMoniker": "Inventary-for-home-Desk-ver.C\\MainWindow.cs",
               "ToolTip": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\MainWindow.cs",
               "RelativeToolTip": "Inventary-for-home-Desk-ver.C\\MainWindow.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAArwD0AAAAMAAAA",
+              "ViewState": "AQIAADIAAAAAAAAAAAArwD0AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-13T22:43:12.121Z",
               "IsPinned": true,
@@ -68,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "MainWindow.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\MainWindow.cs",
               "RelativeDocumentMoniker": "Inventary-for-home-Desk-ver.C\\MainWindow.cs",
@@ -98,40 +102,53 @@
               "RelativeDocumentMoniker": "Inventary-for-home-Desk-ver.C\\UpdateWindow.cs",
               "ToolTip": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\UpdateWindow.cs",
               "RelativeToolTip": "Inventary-for-home-Desk-ver.C\\UpdateWindow.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAASwCsAAAAbAAAA",
+              "ViewState": "AQIAADYAAAAAAAAAAAASwEUAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-18T03:34:48.11Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Querys.cs",
               "DocumentMoniker": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\Models\\Querys.cs",
               "RelativeDocumentMoniker": "Inventary-for-home-Desk-ver.C\\Models\\Querys.cs",
               "ToolTip": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\Models\\Querys.cs",
               "RelativeToolTip": "Inventary-for-home-Desk-ver.C\\Models\\Querys.cs",
-              "ViewState": "AQIAAAEBAAAAAAAAAADgvw8BAAAQAAAA",
+              "ViewState": "AQIAAAcBAAAAAAAAAAAYwCUBAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-04T04:41:46.536Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "AddItemWindow.cs",
               "DocumentMoniker": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\AddItemWindow.cs",
               "RelativeDocumentMoniker": "Inventary-for-home-Desk-ver.C\\AddItemWindow.cs",
               "ToolTip": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\AddItemWindow.cs",
               "RelativeToolTip": "Inventary-for-home-Desk-ver.C\\AddItemWindow.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAADgvxQAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T04:00:50.176Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
+              "Title": "StoredProcedure2.cs",
+              "DocumentMoniker": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\Models\\StoredProcedure2.cs",
+              "RelativeDocumentMoniker": "Inventary-for-home-Desk-ver.C\\Models\\StoredProcedure2.cs",
+              "ToolTip": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\Models\\StoredProcedure2.cs",
+              "RelativeToolTip": "Inventary-for-home-Desk-ver.C\\Models\\StoredProcedure2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T06:17:00.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "StoredProcedure3.cs",
               "DocumentMoniker": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\Models\\StoredProcedure3.cs",
               "RelativeDocumentMoniker": "Inventary-for-home-Desk-ver.C\\Models\\StoredProcedure3.cs",
@@ -139,8 +156,7 @@
               "RelativeToolTip": "Inventary-for-home-Desk-ver.C\\Models\\StoredProcedure3.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T05:22:28.308Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T05:22:28.308Z"
             }
           ]
         }

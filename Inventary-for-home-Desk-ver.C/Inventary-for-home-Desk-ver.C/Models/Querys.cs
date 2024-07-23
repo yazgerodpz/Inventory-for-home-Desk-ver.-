@@ -273,5 +273,26 @@ namespace Inventary_for_home_Desk_ver.C.Models
             }
         }
 
+        public static async Task<StoredProcedure2> obtenerPrioByIdAsync(int IdPrio)
+        {
+            using (var db = new InventoryForHomeContext())
+            {
+                var QryPrio = await (from d in db.CatTypePrioritaries
+                                     where d.IdTypePrioritary == IdPrio
+
+                                     select new StoredProcedure2
+                                     {
+                                         IdTypePrioritary = d.IdTypePrioritary,
+                                         TypePrioritaryName = d.TypePrioritaryName,
+                                         Description = d._Description,
+                                     }
+
+                                     ).ToListAsync();
+
+
+
+                return QryPrio[0];
+            }
+        }
     }
 }
