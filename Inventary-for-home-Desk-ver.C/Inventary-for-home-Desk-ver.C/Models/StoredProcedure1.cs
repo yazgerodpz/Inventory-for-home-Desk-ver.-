@@ -15,11 +15,18 @@ namespace Inventary_for_home_Desk_ver.C.Models
         public int Stock { get; set; }
 
         public string TypePrioritaryName { get; set; } = null!;
-
+ 
         public string TypeStockName { get; set; } = null!;
 
         public DateTime PurchesDate { get; set; }
 
         public DateTime ExpirationDate { get; set; }
     }
+
+    public class StoredProcedure14Update : StoredProcedure1
+    {
+        public int IdTypePrioritary { get; set; }
+        public int IdTypeStock { get; set; }
+    }
+
 }
