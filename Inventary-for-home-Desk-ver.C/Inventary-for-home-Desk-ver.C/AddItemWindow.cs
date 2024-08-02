@@ -15,7 +15,19 @@ namespace Inventary_for_home_Desk_ver.C
     {
         public AddItemWindow()
         {
+            Load += DataLoaded;
             InitializeComponent();
+            CantidadArtAdd.Maximum = decimal.MaxValue;
+            CantidadArtAdd.Minimum = 1;
+        }
+
+        private async void DataLoaded(object sender, EventArgs e)
+        {
+            //Traer Catalogos
+            var catPrior = await Querys.obtenerCatalogoPrio();
+            listBox1.DataSource = catPrior;
+            var catStk = await Querys.obtenerCatalogoStock();
+            listBox2.DataSource = catStk;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -46,21 +58,25 @@ namespace Inventary_for_home_Desk_ver.C
                 {
                     MessageBox.Show("Falta agregar una cantidad");
                     validado = false;
-                } 
-                //Prioridad
-                var PrioridAdd = TipoPrioArtAdd.Value.ToString();
-                if (string.IsNullOrEmpty(PrioridAdd)) 
+                }
+                //Prioridad POR EL LISTBOX
+        
+                StoredProcedure2 PrioridOBJ = (StoredProcedure2)listBox1.SelectedItem;
+                if (PrioridOBJ == null) 
                 {
                     MessageBox.Show("Falta elegir la regla de importancia");
                     validado = false;
                 }
-                //Empaque
-                var EmpAdd = TipoEmpaqueAdd.Value.ToString();
-                if (string.IsNullOrEmpty(EmpAdd)) 
+
+                //Cear la vista de los empaques por listbox
+                StoredProcedure3 StockOBJ = (StoredProcedure3)listBox2.SelectedItem;
+                if (StockOBJ == null)
                 {
                     MessageBox.Show("Falta elegir un empaque");
                     validado = false;
                 }
+                
+
                 //Fecha compra convertida a cadena con formato
                 var fechaCompraSTR = FechaCompra.Value.ToString("yyyy-MM-dd");
                 if (string.IsNullOrEmpty(fechaCompraSTR))
@@ -82,9 +98,9 @@ namespace Inventary_for_home_Desk_ver.C
                 {
                     //Enviar a la BD
                     await Querys.CrearNArtAsync(nombreArticulo.Text, 
-                        CantidAdd, 
-                        PrioridAdd, 
-                        EmpAdd,
+                        CantidAdd,
+                        PrioridOBJ.IdTypePrioritary.ToString(),
+                        StockOBJ.IdTypeStock.ToString(),
                         FechaCompra.Value,
                         FechaExpiración.Value);
                     MessageBox.Show("Se guardo correctamente");

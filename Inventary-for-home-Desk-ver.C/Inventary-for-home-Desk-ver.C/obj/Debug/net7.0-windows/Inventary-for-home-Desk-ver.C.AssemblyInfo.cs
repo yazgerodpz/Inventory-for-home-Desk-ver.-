@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Inventary-for-home-Desk-ver.C")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a6152f3d57452ad0edd288fb391446b309b027b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c222413e79b9d9822d05a70bcd030da8c925f3d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Inventary-for-home-Desk-ver.C")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Inventary-for-home-Desk-ver.C")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

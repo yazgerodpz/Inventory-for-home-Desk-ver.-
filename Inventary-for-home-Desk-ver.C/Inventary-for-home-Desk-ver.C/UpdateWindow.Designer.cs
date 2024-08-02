@@ -33,11 +33,11 @@
             UpdateWinCancelar = new Button();
             tabUpDate = new TabControl();
             ArticuloAct = new TabPage();
+            listBoxUpdateStock = new ListBox();
+            listBoxupdatePrio = new ListBox();
             UDSearch = new Button();
             QIDArtoUD = new Label();
             IdArtiFind = new NumericUpDown();
-            EmpActual = new NumericUpDown();
-            ReglaActual = new NumericUpDown();
             CantidadActual = new NumericUpDown();
             UDTypeS = new Label();
             ExpiracionActual = new DateTimePicker();
@@ -65,8 +65,6 @@
             tabUpDate.SuspendLayout();
             ArticuloAct.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)IdArtiFind).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)EmpActual).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)ReglaActual).BeginInit();
             ((System.ComponentModel.ISupportInitialize)CantidadActual).BeginInit();
             empaquesAct.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)IdTStock).BeginInit();
@@ -85,16 +83,17 @@
             // 
             // UpdateWinFinalizar
             // 
-            UpdateWinFinalizar.Location = new Point(246, 423);
+            UpdateWinFinalizar.Location = new Point(573, 440);
             UpdateWinFinalizar.Name = "UpdateWinFinalizar";
             UpdateWinFinalizar.Size = new Size(75, 23);
             UpdateWinFinalizar.TabIndex = 1;
             UpdateWinFinalizar.Text = "Finalizar";
             UpdateWinFinalizar.UseVisualStyleBackColor = true;
+            UpdateWinFinalizar.Click += UpdateWinFinalizar_Click;
             // 
             // UpdateWinCancelar
             // 
-            UpdateWinCancelar.Location = new Point(327, 423);
+            UpdateWinCancelar.Location = new Point(654, 440);
             UpdateWinCancelar.Name = "UpdateWinCancelar";
             UpdateWinCancelar.Size = new Size(75, 23);
             UpdateWinCancelar.TabIndex = 2;
@@ -110,16 +109,16 @@
             tabUpDate.Location = new Point(12, 37);
             tabUpDate.Name = "tabUpDate";
             tabUpDate.SelectedIndex = 0;
-            tabUpDate.Size = new Size(393, 380);
+            tabUpDate.Size = new Size(701, 397);
             tabUpDate.TabIndex = 3;
             // 
             // ArticuloAct
             // 
+            ArticuloAct.Controls.Add(listBoxUpdateStock);
+            ArticuloAct.Controls.Add(listBoxupdatePrio);
             ArticuloAct.Controls.Add(UDSearch);
             ArticuloAct.Controls.Add(QIDArtoUD);
             ArticuloAct.Controls.Add(IdArtiFind);
-            ArticuloAct.Controls.Add(EmpActual);
-            ArticuloAct.Controls.Add(ReglaActual);
             ArticuloAct.Controls.Add(CantidadActual);
             ArticuloAct.Controls.Add(UDTypeS);
             ArticuloAct.Controls.Add(ExpiracionActual);
@@ -133,14 +132,34 @@
             ArticuloAct.Location = new Point(4, 24);
             ArticuloAct.Name = "ArticuloAct";
             ArticuloAct.Padding = new Padding(3);
-            ArticuloAct.Size = new Size(385, 352);
+            ArticuloAct.Size = new Size(693, 369);
             ArticuloAct.TabIndex = 0;
             ArticuloAct.Text = "Artículo";
             ArticuloAct.UseVisualStyleBackColor = true;
             // 
+            // listBoxUpdateStock
+            // 
+            listBoxUpdateStock.FormattingEnabled = true;
+            listBoxUpdateStock.ItemHeight = 15;
+            listBoxUpdateStock.Location = new Point(6, 229);
+            listBoxUpdateStock.Name = "listBoxUpdateStock";
+            listBoxUpdateStock.Size = new Size(355, 34);
+            listBoxUpdateStock.TabIndex = 25;
+            // 
+            // listBoxupdatePrio
+            // 
+            listBoxupdatePrio.DisplayMember = "Id";
+            listBoxupdatePrio.FormattingEnabled = true;
+            listBoxupdatePrio.ItemHeight = 15;
+            listBoxupdatePrio.Location = new Point(6, 169);
+            listBoxupdatePrio.Name = "listBoxupdatePrio";
+            listBoxupdatePrio.Size = new Size(681, 34);
+            listBoxupdatePrio.TabIndex = 24;
+            listBoxupdatePrio.ValueMember = "IdTypePrioritary";
+            // 
             // UDSearch
             // 
-            UDSearch.Location = new Point(155, 37);
+            UDSearch.Location = new Point(155, 33);
             UDSearch.Name = "UDSearch";
             UDSearch.Size = new Size(75, 23);
             UDSearch.TabIndex = 19;
@@ -151,44 +170,31 @@
             // QIDArtoUD
             // 
             QIDArtoUD.AutoSize = true;
-            QIDArtoUD.Location = new Point(6, 19);
+            QIDArtoUD.Location = new Point(6, 15);
             QIDArtoUD.Name = "QIDArtoUD";
-            QIDArtoUD.Size = new Size(264, 15);
+            QIDArtoUD.Size = new Size(263, 15);
             QIDArtoUD.TabIndex = 18;
-            QIDArtoUD.Text = "Seleccione el Id del Artículo que desea actualizar:";
+            QIDArtoUD.Text = "Seleccione el ID del artículo que desea actualizar:";
             // 
             // IdArtiFind
             // 
-            IdArtiFind.Location = new Point(6, 37);
+            IdArtiFind.Location = new Point(6, 33);
             IdArtiFind.Name = "IdArtiFind";
             IdArtiFind.Size = new Size(120, 23);
             IdArtiFind.TabIndex = 17;
             // 
-            // EmpActual
-            // 
-            EmpActual.Location = new Point(6, 231);
-            EmpActual.Name = "EmpActual";
-            EmpActual.Size = new Size(120, 23);
-            EmpActual.TabIndex = 16;
-            // 
-            // ReglaActual
-            // 
-            ReglaActual.Location = new Point(6, 187);
-            ReglaActual.Name = "ReglaActual";
-            ReglaActual.Size = new Size(120, 23);
-            ReglaActual.TabIndex = 15;
-            // 
             // CantidadActual
             // 
-            CantidadActual.Location = new Point(6, 143);
+            CantidadActual.Location = new Point(6, 125);
             CantidadActual.Name = "CantidadActual";
             CantidadActual.Size = new Size(120, 23);
             CantidadActual.TabIndex = 14;
+            CantidadActual.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // UDTypeS
             // 
             UDTypeS.AutoSize = true;
-            UDTypeS.Location = new Point(3, 213);
+            UDTypeS.Location = new Point(3, 211);
             UDTypeS.Name = "UDTypeS";
             UDTypeS.Size = new Size(102, 15);
             UDTypeS.TabIndex = 13;
@@ -196,14 +202,14 @@
             // 
             // ExpiracionActual
             // 
-            ExpiracionActual.Location = new Point(3, 319);
+            ExpiracionActual.Location = new Point(6, 328);
             ExpiracionActual.Name = "ExpiracionActual";
             ExpiracionActual.Size = new Size(213, 23);
             ExpiracionActual.TabIndex = 12;
             // 
             // CompraActual
             // 
-            CompraActual.Location = new Point(3, 275);
+            CompraActual.Location = new Point(6, 284);
             CompraActual.Name = "CompraActual";
             CompraActual.Size = new Size(213, 23);
             CompraActual.TabIndex = 11;
@@ -211,7 +217,7 @@
             // UDExpiration
             // 
             UDExpiration.AutoSize = true;
-            UDExpiration.Location = new Point(3, 301);
+            UDExpiration.Location = new Point(6, 310);
             UDExpiration.Name = "UDExpiration";
             UDExpiration.Size = new Size(115, 15);
             UDExpiration.TabIndex = 9;
@@ -220,7 +226,7 @@
             // UDPurchase
             // 
             UDPurchase.AutoSize = true;
-            UDPurchase.Location = new Point(0, 257);
+            UDPurchase.Location = new Point(6, 266);
             UDPurchase.Name = "UDPurchase";
             UDPurchase.Size = new Size(101, 15);
             UDPurchase.TabIndex = 8;
@@ -229,7 +235,7 @@
             // UDItemName
             // 
             UDItemName.AutoSize = true;
-            UDItemName.Location = new Point(6, 81);
+            UDItemName.Location = new Point(6, 63);
             UDItemName.Name = "UDItemName";
             UDItemName.Size = new Size(52, 15);
             UDItemName.TabIndex = 4;
@@ -237,7 +243,7 @@
             // 
             // ArtElegido
             // 
-            ArtElegido.Location = new Point(6, 99);
+            ArtElegido.Location = new Point(6, 81);
             ArtElegido.Name = "ArtElegido";
             ArtElegido.Size = new Size(210, 23);
             ArtElegido.TabIndex = 5;
@@ -245,7 +251,7 @@
             // UDStock
             // 
             UDStock.AutoSize = true;
-            UDStock.Location = new Point(6, 125);
+            UDStock.Location = new Point(3, 107);
             UDStock.Name = "UDStock";
             UDStock.Size = new Size(58, 15);
             UDStock.TabIndex = 6;
@@ -254,7 +260,7 @@
             // UDPrio
             // 
             UDPrio.AutoSize = true;
-            UDPrio.Location = new Point(3, 169);
+            UDPrio.Location = new Point(3, 151);
             UDPrio.Name = "UDPrio";
             UDPrio.Size = new Size(106, 15);
             UDPrio.TabIndex = 7;
@@ -269,7 +275,7 @@
             empaquesAct.Controls.Add(UDTypeStock);
             empaquesAct.Location = new Point(4, 24);
             empaquesAct.Name = "empaquesAct";
-            empaquesAct.Size = new Size(385, 352);
+            empaquesAct.Size = new Size(693, 369);
             empaquesAct.TabIndex = 2;
             empaquesAct.Text = "Empaques";
             empaquesAct.UseVisualStyleBackColor = true;
@@ -328,7 +334,7 @@
             PrioridadAct.Location = new Point(4, 24);
             PrioridadAct.Name = "PrioridadAct";
             PrioridadAct.Padding = new Padding(3);
-            PrioridadAct.Size = new Size(385, 352);
+            PrioridadAct.Size = new Size(693, 369);
             PrioridadAct.TabIndex = 1;
             PrioridadAct.Text = "Regla de prioridad";
             PrioridadAct.UseVisualStyleBackColor = true;
@@ -353,8 +359,9 @@
             // DescPrioAct
             // 
             DescPrioAct.Location = new Point(6, 140);
+            DescPrioAct.Multiline = true;
             DescPrioAct.Name = "DescPrioAct";
-            DescPrioAct.Size = new Size(100, 23);
+            DescPrioAct.Size = new Size(681, 145);
             DescPrioAct.TabIndex = 7;
             // 
             // RulePrioAct
@@ -387,15 +394,15 @@
             UDPrioridad.AutoSize = true;
             UDPrioridad.Location = new Point(6, 14);
             UDPrioridad.Name = "UDPrioridad";
-            UDPrioridad.Size = new Size(283, 15);
+            UDPrioridad.Size = new Size(325, 15);
             UDPrioridad.TabIndex = 4;
-            UDPrioridad.Text = "Seleccione la regla de prioridad que desea actualizar:";
+            UDPrioridad.Text = "Seleccione el ID de la regla de prioridad que desea actualizar:";
             // 
             // UpdateWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(414, 457);
+            ClientSize = new Size(741, 470);
             Controls.Add(tabUpDate);
             Controls.Add(UpdateWinCancelar);
             Controls.Add(UpdateWinFinalizar);
@@ -408,8 +415,6 @@
             ArticuloAct.ResumeLayout(false);
             ArticuloAct.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)IdArtiFind).EndInit();
-            ((System.ComponentModel.ISupportInitialize)EmpActual).EndInit();
-            ((System.ComponentModel.ISupportInitialize)ReglaActual).EndInit();
             ((System.ComponentModel.ISupportInitialize)CantidadActual).EndInit();
             empaquesAct.ResumeLayout(false);
             empaquesAct.PerformLayout();
@@ -447,8 +452,6 @@
         private Label UDTypeStock;
         private TextBox ActualizarEmp;
         private Label PreguntaEmpaqueAct;
-        private NumericUpDown EmpActual;
-        private NumericUpDown ReglaActual;
         private NumericUpDown CantidadActual;
         private Button UDSearch;
         private Label QIDArtoUD;
@@ -457,5 +460,7 @@
         private NumericUpDown IdTStock;
         private Button PrioFind;
         private NumericUpDown IdPrio;
+        private ListBox listBoxUpdateStock;
+        private ListBox listBoxupdatePrio;
     }
 }

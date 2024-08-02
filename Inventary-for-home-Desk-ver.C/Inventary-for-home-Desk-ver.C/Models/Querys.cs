@@ -113,7 +113,7 @@ namespace Inventary_for_home_Desk_ver.C.Models
         }
 
         //Funciones de actualizar
-        public static async Task<bool> ActArtAsync(string _ActName, string _numstock, string _TypePN, string _TypeSN, string _PDate, string _EDate, string _Actualizar)
+        public static async Task<bool> ActArtAsync(string _ActName, string _numstock, string _TypePN, string _TypeSN, DateTime _PDate, DateTime _EDate, string _Actualizar)
         {
             try
             {
@@ -219,36 +219,46 @@ namespace Inventary_for_home_Desk_ver.C.Models
     
         ///SECCION DE QUERYS CON LINQ
         ///
-
-        public static async Task<StoredProcedure1> obtenerItemByIdAsync(int IdItem)
+        // Codigo para visualizar la informacion en casillas asignadas
+        public static async Task<StoredProcedure14Update?> obtenerItemByIdAsync(int IdItem)
         {
             using (var db = new InventoryForHomeContext())
             {
-                var QryResult = await (from a in db.Items
-                                       join b in db.CatTypePrioritaries
-                                       on a.IdTypePrioritary equals b.IdTypePrioritary
-                                       join c in db.CatTypeStocks
-                                       on a.IdTypeStock equals c.IdTypeStock
-                                       where a.Active == true 
-                                       && a.IdItem == IdItem
+                //VALIDAR QUE EXISTA ESE ID
 
-                                       select new StoredProcedure1
-                                       {
-                                           ItemName = a.ItemName,
-                                           Stock = a.Stock,
-                                           TypePrioritaryName = b.TypePrioritaryName,
-                                           TypeStockName = c.TypeStockName,
-                                           PurchesDate = a.PurchesDate,
-                                           ExpirationDate = a.ExpirationDate,
-                                       }
+                var ValidacionExiste = await db.Items.FirstOrDefaultAsync(I=>I.IdItem == IdItem);
 
-                                       ).ToListAsync();
+                if (ValidacionExiste == null)
+                {
+                    return null;
+                }
+                else
+                {
+                    //BUSCAR EL OBJETO
+                    var QryResult = await (from a in db.Items
+                                           join b in db.CatTypePrioritaries
+                                           on a.IdTypePrioritary equals b.IdTypePrioritary
+                                           join c in db.CatTypeStocks
+                                           on a.IdTypeStock equals c.IdTypeStock
+                                           where a.Active == true
+                                           && a.IdItem == IdItem
 
+                                           select new StoredProcedure14Update
+                                           {
+                                               ItemName = a.ItemName,
+                                               Stock = a.Stock,
+                                               IdTypePrioritary = a.IdTypePrioritary,
+                                               TypePrioritaryName = b.TypePrioritaryName,
+                                               IdTypeStock = a.IdTypeStock,
+                                               TypeStockName = c.TypeStockName,
+                                               PurchesDate = a.PurchesDate,
+                                               ExpirationDate = a.ExpirationDate,
+                                           }
 
+                                           ).ToListAsync();
+                    return QryResult[0];
 
-
-
-                return QryResult[0];
+                }
             }
         }
 
@@ -273,5 +283,60 @@ namespace Inventary_for_home_Desk_ver.C.Models
             }
         }
 
+        public static async Task<StoredProcedure2> obtenerPrioByIdAsync(int IdPrio)
+        {
+            using (var db = new InventoryForHomeContext())
+            {
+                var QryPrio = await (from d in db.CatTypePrioritaries
+                                     where d.IdTypePrioritary == IdPrio
+
+                                     select new StoredProcedure2
+                                     {
+                                         IdTypePrioritary = d.IdTypePrioritary,
+                                         TypePrioritaryName = d.TypePrioritaryName,
+                                         Description = d._Description,
+                                     }
+
+                                     ).ToListAsync();
+
+
+
+                return QryPrio[0];
+            }
+        }
+    
+        //Traer Catalogos
+
+        public static async Task<List<StoredProcedure2>> obtenerCatalogoPrio()
+        {
+            using (var db = new InventoryForHomeContext())
+            {
+
+                var queryResult = await (from prio in db.CatTypePrioritaries 
+                                        select new StoredProcedure2
+                                        {
+                                            IdTypePrioritary = prio.IdTypePrioritary,
+                                            TypePrioritaryName= prio.TypePrioritaryName,
+                                            Description = prio._Description,  
+                                        }).ToListAsync();
+                return queryResult;
+            }
+        }
+
+        //traer el catalogo de stock
+        public static async Task<List<StoredProcedure3>> obtenerCatalogoStock()
+        {
+            using ( var db = new InventoryForHomeContext())
+            {
+                var queryRessultStock = await (from emp in db.CatTypeStocks
+                                               select new StoredProcedure3
+                                               {
+                                                   IdTypeStock = emp.IdTypeStock,
+                                                   TypeStockName = emp.TypeStockName,
+                                               }).ToListAsync();
+                return queryRessultStock;
+            }
+        }
+    
     }
 }

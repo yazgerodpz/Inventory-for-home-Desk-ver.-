@@ -32,8 +32,6 @@
             añadirToolStripMenuItem = new ToolStripMenuItem();
             actualizarToolStripMenuItem = new ToolStripMenuItem();
             eliminarToolStripMenuItem = new ToolStripMenuItem();
-            buscarToolStripMenuItem = new ToolStripMenuItem();
-            toolStripTextBox1 = new ToolStripTextBox();
             TabMain = new TabControl();
             tabItem = new TabPage();
             dataGridViewItem = new DataGridView();
@@ -46,10 +44,10 @@
             FechaExpiración = new DataGridViewTextBoxColumn();
             tabStock = new TabPage();
             dataGridViewStock = new DataGridView();
-            tabReglaPrioridad = new TabPage();
-            dataGridViewPrio = new DataGridView();
             IdStock = new DataGridViewTextBoxColumn();
             TypeStock = new DataGridViewTextBoxColumn();
+            tabReglaPrioridad = new TabPage();
+            dataGridViewPrio = new DataGridView();
             IdPriority = new DataGridViewTextBoxColumn();
             PrioritaryName = new DataGridViewTextBoxColumn();
             DescriptionPrio = new DataGridViewTextBoxColumn();
@@ -65,7 +63,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { añadirToolStripMenuItem, actualizarToolStripMenuItem, eliminarToolStripMenuItem, buscarToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { añadirToolStripMenuItem, actualizarToolStripMenuItem, eliminarToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(782, 24);
@@ -92,19 +90,6 @@
             eliminarToolStripMenuItem.Size = new Size(62, 20);
             eliminarToolStripMenuItem.Text = "Eliminar";
             eliminarToolStripMenuItem.Click += eliminarToolStripMenuItem_Click;
-            // 
-            // buscarToolStripMenuItem
-            // 
-            buscarToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { toolStripTextBox1 });
-            buscarToolStripMenuItem.Name = "buscarToolStripMenuItem";
-            buscarToolStripMenuItem.Size = new Size(54, 20);
-            buscarToolStripMenuItem.Text = "Buscar";
-            buscarToolStripMenuItem.Click += buscarToolStripMenuItem_Click;
-            // 
-            // toolStripTextBox1
-            // 
-            toolStripTextBox1.Name = "toolStripTextBox1";
-            toolStripTextBox1.Size = new Size(100, 23);
             // 
             // TabMain
             // 
@@ -147,9 +132,11 @@
             // 
             // Item
             // 
+            Item.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
             Item.DataPropertyName = "ItemName";
             Item.HeaderText = "Artículos";
             Item.Name = "Item";
+            Item.Width = 79;
             // 
             // Stock
             // 
@@ -165,9 +152,11 @@
             // 
             // TipoEmpaque
             // 
+            TipoEmpaque.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
             TipoEmpaque.DataPropertyName = "TypeStockName";
             TipoEmpaque.HeaderText = "Tipo de empaque";
             TipoEmpaque.Name = "TipoEmpaque";
+            TipoEmpaque.Width = 114;
             // 
             // FechaCompra
             // 
@@ -202,6 +191,19 @@
             dataGridViewStock.Size = new Size(745, 294);
             dataGridViewStock.TabIndex = 0;
             // 
+            // IdStock
+            // 
+            IdStock.DataPropertyName = "IdTypeStock";
+            IdStock.HeaderText = "Id";
+            IdStock.Name = "IdStock";
+            // 
+            // TypeStock
+            // 
+            TypeStock.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            TypeStock.DataPropertyName = "TypeStockName";
+            TypeStock.HeaderText = "Tipos de empaques";
+            TypeStock.Name = "TypeStock";
+            // 
             // tabReglaPrioridad
             // 
             tabReglaPrioridad.Controls.Add(dataGridViewPrio);
@@ -222,18 +224,6 @@
             dataGridViewPrio.RowTemplate.Height = 25;
             dataGridViewPrio.Size = new Size(748, 300);
             dataGridViewPrio.TabIndex = 0;
-            // 
-            // IdStock
-            // 
-            IdStock.DataPropertyName = "IdTypeStock";
-            IdStock.HeaderText = "Id";
-            IdStock.Name = "IdStock";
-            // 
-            // TypeStock
-            // 
-            TypeStock.DataPropertyName = "TypeStockName";
-            TypeStock.HeaderText = "Tipos de empaques";
-            TypeStock.Name = "TypeStock";
             // 
             // IdPriority
             // 
@@ -283,8 +273,6 @@
         private ToolStripMenuItem añadirToolStripMenuItem;
         private ToolStripMenuItem actualizarToolStripMenuItem;
         private ToolStripMenuItem eliminarToolStripMenuItem;
-        private ToolStripMenuItem buscarToolStripMenuItem;
-        private ToolStripTextBox toolStripTextBox1;
         private TabControl TabMain;
         private TabPage tabItem;
         private TabPage tabReglaPrioridad;
@@ -292,6 +280,11 @@
         private DataGridView dataGridViewPrio;
         private TabPage tabStock;
         private DataGridView dataGridViewStock;
+        private DataGridViewTextBoxColumn IdPriority;
+        private DataGridViewTextBoxColumn PrioritaryName;
+        private DataGridViewTextBoxColumn DescriptionPrio;
+        private DataGridViewTextBoxColumn IdStock;
+        private DataGridViewTextBoxColumn TypeStock;
         private DataGridViewTextBoxColumn Id;
         private DataGridViewTextBoxColumn Item;
         private DataGridViewTextBoxColumn Stock;
@@ -299,10 +292,5 @@
         private DataGridViewTextBoxColumn TipoEmpaque;
         private DataGridViewTextBoxColumn FechaCompra;
         private DataGridViewTextBoxColumn FechaExpiración;
-        private DataGridViewTextBoxColumn IdStock;
-        private DataGridViewTextBoxColumn TypeStock;
-        private DataGridViewTextBoxColumn IdPriority;
-        private DataGridViewTextBoxColumn PrioritaryName;
-        private DataGridViewTextBoxColumn DescriptionPrio;
     }
 }

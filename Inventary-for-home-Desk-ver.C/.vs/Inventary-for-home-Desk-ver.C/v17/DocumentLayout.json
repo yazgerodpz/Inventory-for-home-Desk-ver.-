@@ -4,6 +4,7 @@
   "Documents": [
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       "AbsoluteMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\inventary-for-home-desk-ver.c\\updatewindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|solutionrelative:inventary-for-home-desk-ver.c\\updatewindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
@@ -12,6 +13,10 @@
 >>>>>>> yazryr
       "AbsoluteMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|d:\\yazryr\\documentos\\programaci\u00F3n\\inventory-for-home-desk-ver.-\\inventary-for-home-desk-ver.c\\inventary-for-home-desk-ver.c\\updatewindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|solutionrelative:inventary-for-home-desk-ver.c\\updatewindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|d:\\yazryr\\documentos\\programaci\u00F3n\\inventory-for-home-desk-ver.-\\inventary-for-home-desk-ver.c\\inventary-for-home-desk-ver.c\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|solutionrelative:inventary-for-home-desk-ver.c\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+>>>>>>> yazryr
     },
     {
       "AbsoluteMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|d:\\yazryr\\documentos\\programaci\u00F3n\\inventory-for-home-desk-ver.-\\inventary-for-home-desk-ver.c\\inventary-for-home-desk-ver.c\\updatewindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -22,10 +27,19 @@
       "RelativeMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|solutionrelative:inventary-for-home-desk-ver.c\\models\\querys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|d:\\yazryr\\documentos\\programaci\u00F3n\\inventory-for-home-desk-ver.-\\inventary-for-home-desk-ver.c\\inventary-for-home-desk-ver.c\\updatewindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|solutionrelative:inventary-for-home-desk-ver.c\\updatewindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\inventary-for-home-desk-ver.c\\additemwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|solutionrelative:inventary-for-home-desk-ver.c\\additemwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|d:\\yazryr\\documentos\\programaci\u00F3n\\inventory-for-home-desk-ver.-\\inventary-for-home-desk-ver.c\\inventary-for-home-desk-ver.c\\additemwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|solutionrelative:inventary-for-home-desk-ver.c\\additemwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|d:\\yazryr\\documentos\\programaci\u00F3n\\inventory-for-home-desk-ver.-\\inventary-for-home-desk-ver.c\\inventary-for-home-desk-ver.c\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|solutionrelative:inventary-for-home-desk-ver.c\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -40,6 +54,30 @@
       "AbsoluteMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\inventary-for-home-desk-ver.c\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
 >>>>>>> yazryr
       "RelativeMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|solutionrelative:inventary-for-home-desk-ver.c\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+=======
+      "AbsoluteMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|d:\\yazryr\\documentos\\programaci\u00F3n\\inventory-for-home-desk-ver.-\\inventary-for-home-desk-ver.c\\inventary-for-home-desk-ver.c\\deletedwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|solutionrelative:inventary-for-home-desk-ver.c\\deletedwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\inventary-for-home-desk-ver.c\\updatewindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|solutionrelative:inventary-for-home-desk-ver.c\\updatewindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|d:\\yazryr\\documentos\\programaci\u00F3n\\inventory-for-home-desk-ver.-\\inventary-for-home-desk-ver.c\\inventary-for-home-desk-ver.c\\models\\storedprocedure2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|solutionrelative:inventary-for-home-desk-ver.c\\models\\storedprocedure2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|d:\\yazryr\\documentos\\programaci\u00F3n\\inventory-for-home-desk-ver.-\\inventary-for-home-desk-ver.c\\inventary-for-home-desk-ver.c\\models\\storedprocedure1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|solutionrelative:inventary-for-home-desk-ver.c\\models\\storedprocedure1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\inventary-for-home-desk-ver.c\\deletedwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|solutionrelative:inventary-for-home-desk-ver.c\\deletedwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|d:\\yazryr\\documentos\\programaci\u00F3n\\inventory-for-home-desk-ver.-\\inventary-for-home-desk-ver.c\\inventary-for-home-desk-ver.c\\models\\storedprocedure3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C0FAE66-E4AF-4888-888B-D0E680D22448}|Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C.csproj|solutionrelative:inventary-for-home-desk-ver.c\\models\\storedprocedure3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> yazryr
     }
   ],
   "DocumentGroupContainers": [
@@ -48,6 +86,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
+<<<<<<< HEAD
           "DockedWidth": 285,
 <<<<<<< HEAD
           "SelectedChildIndex": 8,
@@ -62,12 +101,20 @@
               "$type": "Document",
               "DocumentIndex": 2,
 >>>>>>> yazryr
+=======
+          "DockedWidth": 91,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+>>>>>>> yazryr
               "Title": "MainWindow.cs",
               "DocumentMoniker": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\MainWindow.cs",
               "RelativeDocumentMoniker": "Inventary-for-home-Desk-ver.C\\MainWindow.cs",
               "ToolTip": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\MainWindow.cs",
               "RelativeToolTip": "Inventary-for-home-Desk-ver.C\\MainWindow.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAArwD0AAAAMAAAA",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAUwFcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-13T22:43:12.121Z",
               "IsPinned": true,
@@ -87,6 +134,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
 <<<<<<< HEAD
               "DocumentIndex": 2,
               "Title": "Querys.cs",
@@ -118,6 +166,9 @@
 =======
               "DocumentIndex": 6,
 >>>>>>> yazryr
+=======
+              "DocumentIndex": 0,
+>>>>>>> yazryr
               "Title": "MainWindow.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\MainWindow.cs",
               "RelativeDocumentMoniker": "Inventary-for-home-Desk-ver.C\\MainWindow.cs",
@@ -129,6 +180,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
 <<<<<<< HEAD
               "DocumentIndex": 1,
 =======
@@ -158,59 +210,130 @@
 =======
               "WhenOpened": "2024-07-18T03:34:14.946Z",
               "EditorCaption": " [Dise\u00F1o]"
+=======
+              "DocumentIndex": 4,
+              "Title": "AddItemWindow.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\AddItemWindow.cs",
+              "RelativeDocumentMoniker": "Inventary-for-home-Desk-ver.C\\AddItemWindow.cs",
+              "ToolTip": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\AddItemWindow.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Inventary-for-home-Desk-ver.C\\AddItemWindow.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T01:16:51.397Z"
+>>>>>>> yazryr
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "AddItemWindow.cs",
+              "DocumentMoniker": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\AddItemWindow.cs",
+              "RelativeDocumentMoniker": "Inventary-for-home-Desk-ver.C\\AddItemWindow.cs",
+              "ToolTip": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\AddItemWindow.cs",
+              "RelativeToolTip": "Inventary-for-home-Desk-ver.C\\AddItemWindow.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAIBJwGcAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T23:45:36.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "UpdateWindow.cs",
               "DocumentMoniker": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\UpdateWindow.cs",
               "RelativeDocumentMoniker": "Inventary-for-home-Desk-ver.C\\UpdateWindow.cs",
               "ToolTip": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\UpdateWindow.cs",
               "RelativeToolTip": "Inventary-for-home-Desk-ver.C\\UpdateWindow.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAASwCsAAAAbAAAA",
+              "ViewState": "AQIAAIwAAAAAAAAAAAAWwJkAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-18T03:34:48.11Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Querys.cs",
-              "DocumentMoniker": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\Models\\Querys.cs",
-              "RelativeDocumentMoniker": "Inventary-for-home-Desk-ver.C\\Models\\Querys.cs",
-              "ToolTip": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\Models\\Querys.cs",
-              "RelativeToolTip": "Inventary-for-home-Desk-ver.C\\Models\\Querys.cs",
-              "ViewState": "AQIAAAEBAAAAAAAAAADgvw8BAAAQAAAA",
+              "DocumentIndex": 6,
+              "Title": "DeletedWindow.cs",
+              "DocumentMoniker": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\DeletedWindow.cs",
+              "RelativeDocumentMoniker": "Inventary-for-home-Desk-ver.C\\DeletedWindow.cs",
+              "ToolTip": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\DeletedWindow.cs",
+              "RelativeToolTip": "Inventary-for-home-Desk-ver.C\\DeletedWindow.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAwwKIAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T04:41:46.536Z",
+              "WhenOpened": "2024-08-01T00:26:25.849Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AddItemWindow.cs",
-              "DocumentMoniker": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\AddItemWindow.cs",
-              "RelativeDocumentMoniker": "Inventary-for-home-Desk-ver.C\\AddItemWindow.cs",
-              "ToolTip": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\AddItemWindow.cs",
-              "RelativeToolTip": "Inventary-for-home-Desk-ver.C\\AddItemWindow.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T04:00:50.176Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "StoredProcedure3.cs",
               "DocumentMoniker": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\Models\\StoredProcedure3.cs",
               "RelativeDocumentMoniker": "Inventary-for-home-Desk-ver.C\\Models\\StoredProcedure3.cs",
               "ToolTip": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\Models\\StoredProcedure3.cs",
               "RelativeToolTip": "Inventary-for-home-Desk-ver.C\\Models\\StoredProcedure3.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAWAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAADwvxEAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2024-07-23T05:22:28.308Z",
 >>>>>>> yazryr
               "EditorCaption": ""
+=======
+              "WhenOpened": "2024-07-31T04:33:34.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StoredProcedure2.cs",
+              "DocumentMoniker": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\Models\\StoredProcedure2.cs",
+              "RelativeDocumentMoniker": "Inventary-for-home-Desk-ver.C\\Models\\StoredProcedure2.cs",
+              "ToolTip": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\Models\\StoredProcedure2.cs",
+              "RelativeToolTip": "Inventary-for-home-Desk-ver.C\\Models\\StoredProcedure2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T04:03:22.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Querys.cs",
+              "DocumentMoniker": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\Models\\Querys.cs",
+              "RelativeDocumentMoniker": "Inventary-for-home-Desk-ver.C\\Models\\Querys.cs",
+              "ToolTip": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\Models\\Querys.cs",
+              "RelativeToolTip": "Inventary-for-home-Desk-ver.C\\Models\\Querys.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAAIEAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T04:41:46.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UpdateWindow.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\UpdateWindow.cs",
+              "RelativeDocumentMoniker": "Inventary-for-home-Desk-ver.C\\UpdateWindow.cs",
+              "ToolTip": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\UpdateWindow.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Inventary-for-home-Desk-ver.C\\UpdateWindow.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T00:07:06.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DeletedWindow.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\DeletedWindow.cs",
+              "RelativeDocumentMoniker": "Inventary-for-home-Desk-ver.C\\DeletedWindow.cs",
+              "ToolTip": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\DeletedWindow.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Inventary-for-home-Desk-ver.C\\DeletedWindow.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T00:24:07.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StoredProcedure1.cs",
+              "DocumentMoniker": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\Models\\StoredProcedure1.cs",
+              "RelativeDocumentMoniker": "Inventary-for-home-Desk-ver.C\\Models\\StoredProcedure1.cs",
+              "ToolTip": "D:\\Yazryr\\Documentos\\Programaci\u00F3n\\Inventory-for-home-Desk-ver.-\\Inventary-for-home-Desk-ver.C\\Inventary-for-home-Desk-ver.C\\Models\\StoredProcedure1.cs",
+              "RelativeToolTip": "Inventary-for-home-Desk-ver.C\\Models\\StoredProcedure1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T04:53:11.313Z"
+>>>>>>> yazryr
             }
           ]
         }
